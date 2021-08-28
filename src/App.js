@@ -71,11 +71,9 @@ export default function App() {
 
 
     return (
-        <Canvas>
-            <ambientLight intensity={0.5} />
-            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+        <Canvas className="main-canvas">
+            <ambientLight intensity={0.75} color={0xffffff} />
             <pointLight position={[5, 5, 5]} />
-            {/* <Box position={[-1.2, 0, 0]} /> */}
             <Suspense fallback={null}>
                 <Boxes />
             </Suspense>
