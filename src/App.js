@@ -3,13 +3,9 @@ import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber'
 import { useTexture } from '@react-three/drei';
 import './App.css';
 import stone from '../src/assets/images/stone.jpg'
-import hall from '../src/assets/images/hall.jpg'
 import * as THREE from 'three'
 import { random } from 'lodash'
-
-import { a } from '@react-spring/three';
-import Scroll from './Scroll';
-
+import Content from './Content'
 
 
 
@@ -59,29 +55,22 @@ const Boxes = () => {
 }
 
 
+// function moveCamera() {
 
-// function Camera(props) {
-//     const ref = useRef()
-//     const { setDefaultCamera } = useThree()
-//     const [y] = Scroll([-100, 100], { domTarget: window });
+//     const camera = <perspectiveCamera />
 
 
-//     useEffect(() => void setDefaultCamera(ref.current), [])
-//     useFrame(() => ref.current.updateMatrixWorld())
-//     return <a.perspectiveCamera ref={ref} {...props} position-y={y.to((y) => (y / 500) * 25)} />
+//     const t = document.body.getBoundingClientRect().top;
 
+
+//     camera.position.z = t * -0.009;
 
 // }
 
-function Camera(props) {
-    const ref = useRef()
-    const set = useThree((state) => state.set);
-    const { setDefaultCamera } = useThree()
-    useEffect(() => void set({ camera: ref.current }), [])
-    useFrame(() => ref.current.updateMatrixWorld())
-    return <perspectiveCamera ref={ref} {...props} />
+// document.body.onscroll = moveCamera
+// moveCamera();
 
-}
+
 
 
 
@@ -89,15 +78,16 @@ export default function App() {
 
 
     return (
-        <Canvas>
-            <ambientLight intensity={0.75} color={0xffffff} />
-            <pointLight position={[5, 5, 5]} />
+        <div className="main-container">
+            <Canvas style={{ position: "fixed" }}>
+                <ambientLight intensity={0.75} color={0xffffff} />
+                <pointLight position={[5, 5, 5]} />
+                <Suspense fallback={null}>
+                    <Boxes className="boxes" />
+                </Suspense>
+            </Canvas >
+            <Content />
+        </div>
 
-            <Camera position={[0, 0, 10]} />
-
-            <Suspense fallback={null}>
-                <Boxes />
-            </Suspense>
-        </Canvas >
     )
 }
