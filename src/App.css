@@ -19,6 +19,9 @@ body {
 }
 
 canvas {
+  /* IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /* IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /* IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   /* position: fixed; must also be included as inline style in App.js Canvas component */
   position: fixed; 
   /* top: 0;
@@ -40,7 +43,7 @@ canvas {
 }
 
 
-main {
+.main {
   width: 100vw;
   width: 100%;
   color: white;
@@ -72,7 +75,19 @@ h1, h2, h3, blockquote {
   }
 
   .name {
-    font-size: 1.5rem;
+    color: black;
+    background-color: white;
+    font-size: 3rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .tag-line {
+    color: black;
+    background-color: white;
+    font-size: 3rem;
+    display: inline;
+    line-height: 1;
   }
 
   section {
@@ -133,6 +148,3 @@ h1, h2, h3, blockquote {
     justify-content: space-around;
   }
 
-  .main-content {
-    position: fixed;
-  }

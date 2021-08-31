@@ -1,12 +1,11 @@
-import React, { useRef, useEffect, Suspense, useMemo } from 'react'
+import React, { useRef, useEffect, Suspense, useMemo, useState } from 'react'
 import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber'
-import { useTexture } from '@react-three/drei';
+import { useTexture, PerspectiveCamera } from '@react-three/drei';
 import './App.css';
 import stone from '../src/assets/images/stone.jpg'
 import * as THREE from 'three'
 import { random } from 'lodash'
 import Content from './Content'
-
 
 
 const Box = ({ color, ...props }) => {
@@ -56,33 +55,38 @@ const Boxes = () => {
 
 
 // function moveCamera() {
-
-//     const camera = <perspectiveCamera />
-
-
-//     const t = document.body.getBoundingClientRect().top;
+//     // Where the user is currently scrolled to
+//     // const t = document.body.getBoundingClientRect().top;
 
 
-//     camera.position.z = t * -0.009;
+
+//     // moveCamera.position.z = t * -0.009;
+
+
+
+//     // camera.position.z = t * -0.009;
+
 
 // }
 
-// document.body.onscroll = moveCamera
-// moveCamera();
 
 
+export default function App(props) {
 
 
+    // function moveCamera() {
+    //     console.log("working!!!!!!!!!!!!!!!")
+    // }
 
-export default function App() {
 
 
     return (
-        <div className="main-container">
+        <div>
             <Canvas style={{ position: "fixed" }}>
                 <ambientLight intensity={0.75} color={0xffffff} />
                 <pointLight position={[5, 5, 5]} />
                 <Suspense fallback={null}>
+                    <PerspectiveCamera makeDefault {...props} />
                     <Boxes className="boxes" />
                 </Suspense>
             </Canvas >

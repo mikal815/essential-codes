@@ -3,7 +3,7 @@ import './App.css'
 
 export default function Content() {
     return (
-        <main>
+        <div className="main">
 
             <header>
                 <h1>Essential Codes</h1>
@@ -68,9 +68,9 @@ export default function Content() {
             </section>
 
             <blockquote>
-                <p>'We put everything into our work; clean, concise code that works!'<br></br>
+                <div className="tag-line">'We put everything into our work; clean, concise code that works!'<br></br>
                     <p className="name">-Michael Mensinger <i>EC Developer</i></p>
-                </p>
+                </div>
             </blockquote>
 
             <section className="left">
@@ -94,6 +94,6 @@ export default function Content() {
             </footer>
 
 
-        </main>
+        </div>
     )
 }
