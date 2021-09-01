@@ -6,12 +6,13 @@ import stone from '../src/assets/images/stone.jpg'
 import * as THREE from 'three'
 import { random } from 'lodash'
 import Content from './Content'
+import { Camera } from 'three';
 
 
 const Box = ({ color, ...props }) => {
 
     const position = useMemo(() => {
-        return [random(-3, 3, true), random(-3, 3, true), random(-3, 3, true)]
+        return [random(-3, 3, true), random(-3, 3, true), random(-10, 10, true)]
     }, [])
 
     const mesh = useRef();
@@ -38,7 +39,7 @@ const Box = ({ color, ...props }) => {
 
 
 const Boxes = () => {
-    const NUM = 20;
+    const NUM = 50;
     const spheres = new Array(NUM).fill()
     return (
         <>
@@ -54,39 +55,50 @@ const Boxes = () => {
 }
 
 
+
+
+
+
+
 // function moveCamera() {
 //     // Where the user is currently scrolled to
-//     // const t = document.body.getBoundingClientRect().top;
+//     const t = document.body.getBoundingClientRect().top;
 
 
+
+//     const [Zposition, newZPosition] = useState(t)
+
+
+
+//     // Zcam = t * -0.009;
 
 //     // moveCamera.position.z = t * -0.009;
 
-
-
 //     // camera.position.z = t * -0.009;
-
+//     // Three.Camera.position.z = t * -0.009;
 
 // }
+
 
 
 
 export default function App(props) {
 
 
-    // function moveCamera() {
-    //     console.log("working!!!!!!!!!!!!!!!")
-    // }
+    // const t = document.body.getBoundingClientRect().top;
 
+
+
+    // const [Zposition, newZPosition] = useState(t)
 
 
     return (
-        <div>
+        <div >
             <Canvas style={{ position: "fixed" }}>
                 <ambientLight intensity={0.75} color={0xffffff} />
                 <pointLight position={[5, 5, 5]} />
                 <Suspense fallback={null}>
-                    <PerspectiveCamera makeDefault {...props} />
+                    <PerspectiveCamera makeDefault {...props} position={[0, 0, 10]} />
                     <Boxes className="boxes" />
                 </Suspense>
             </Canvas >

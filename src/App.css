@@ -7,6 +7,14 @@ html {
     background-size: cover;
   }
 
+  body{
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+  }
+
   
 
 /*  */
@@ -30,7 +38,6 @@ canvas {
   height: 100%;
 
 }
-
 
 
 :root {
