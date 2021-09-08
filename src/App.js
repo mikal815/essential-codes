@@ -6,6 +6,7 @@ import stone from '../src/assets/images/stone.jpg'
 import * as THREE from 'three'
 import { random } from 'lodash'
 import Content from './Content'
+import { useSpring, animated } from 'react-spring'
 import { Camera } from 'three';
 
 
@@ -39,6 +40,9 @@ const Box = ({ color, ...props }) => {
 
 
 const Boxes = () => {
+
+
+
     const NUM = 50;
     const spheres = new Array(NUM).fill()
     return (
@@ -55,41 +59,34 @@ const Boxes = () => {
 }
 
 
+const MyCamera = (props) => {
+    useFrame(({ camera }) => {
+        // camera.position.z = document.body.getBoundingClientRect().top * -0.009;
+        camera.position.z = document.body.getBoundingClientRect().top * -0.009;
+        // camera.updateMatrix();
+    });
+    return null;
+    // const ref = useRef()
+    // const { setDefaultCamera } = useThree()
+    // // const state = useThree()
+    // // console.log(state.camera.position.z)
+    // // console.log(state.camera.top)
+    // // This makes sure that size-related calculations are proper
+    // // Every call to useThree will return this camera instead of the default camera 
+    // useEffect(() => void setDefaultCamera(ref.current), [])
+    // // useEffect(() => void setDefaultCamera(ref.current), [])
+    // return <perspectiveCamera makeDefault {...props} />
+}
 
 
 
-
-
-// function moveCamera() {
-//     // Where the user is currently scrolled to
-//     const t = document.body.getBoundingClientRect().top;
-
-
-
-//     const [Zposition, newZPosition] = useState(t)
-
-
-
-//     // Zcam = t * -0.009;
-
-//     // moveCamera.position.z = t * -0.009;
-
-//     // camera.position.z = t * -0.009;
-//     // Three.Camera.position.z = t * -0.009;
-
-// }
-
+// window.addEventListener('scroll', MyCamera)
 
 
 
 export default function App(props) {
 
-
-    // const t = document.body.getBoundingClientRect().top;
-
-
-
-    // const [Zposition, newZPosition] = useState(t)
+    const myCam = React.useRef();
 
 
     return (
@@ -98,12 +95,12 @@ export default function App(props) {
                 <ambientLight intensity={0.75} color={0xffffff} />
                 <pointLight position={[5, 5, 5]} />
                 <Suspense fallback={null}>
-                    <PerspectiveCamera makeDefault {...props} position={[0, 0, 10]} />
+                    {/* <PerspectiveCamera makeDefault {...props} position={[0, 0, zPos.current]} /> */}
                     <Boxes className="boxes" />
                 </Suspense>
+                <MyCamera meshRef={myCam} />
             </Canvas >
-            <Content />
+            <Content onScroll={MyCamera} />
         </div>
-
     )
 }
