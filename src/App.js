@@ -13,7 +13,7 @@ import { Camera } from 'three';
 const Box = ({ color, ...props }) => {
 
     const position = useMemo(() => {
-        return [random(-3, 3, true), random(-3, 3, true), random(-10, 10, true)]
+        return [random(-3, 3, true), random(-3, 3, true), random(-10, 60, true)]
     }, [])
 
     const mesh = useRef();
@@ -43,7 +43,7 @@ const Boxes = () => {
 
 
 
-    const NUM = 50;
+    const NUM = 150;
     const spheres = new Array(NUM).fill()
     return (
         <>
@@ -61,32 +61,18 @@ const Boxes = () => {
 
 const MyCamera = (props) => {
     useFrame(({ camera }) => {
-        // camera.position.z = document.body.getBoundingClientRect().top * -0.009;
         camera.position.z = document.body.getBoundingClientRect().top * -0.009;
         // camera.updateMatrix();
     });
     return null;
-    // const ref = useRef()
-    // const { setDefaultCamera } = useThree()
-    // // const state = useThree()
-    // // console.log(state.camera.position.z)
-    // // console.log(state.camera.top)
-    // // This makes sure that size-related calculations are proper
-    // // Every call to useThree will return this camera instead of the default camera 
-    // useEffect(() => void setDefaultCamera(ref.current), [])
-    // // useEffect(() => void setDefaultCamera(ref.current), [])
-    // return <perspectiveCamera makeDefault {...props} />
 }
 
-
-
-// window.addEventListener('scroll', MyCamera)
 
 
 
 export default function App(props) {
 
-    const myCam = React.useRef();
+
 
 
     return (
@@ -95,10 +81,9 @@ export default function App(props) {
                 <ambientLight intensity={0.75} color={0xffffff} />
                 <pointLight position={[5, 5, 5]} />
                 <Suspense fallback={null}>
-                    {/* <PerspectiveCamera makeDefault {...props} position={[0, 0, zPos.current]} /> */}
                     <Boxes className="boxes" />
                 </Suspense>
-                <MyCamera meshRef={myCam} />
+                <MyCamera />
             </Canvas >
             <Content onScroll={MyCamera} />
         </div>
