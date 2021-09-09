@@ -1,19 +1,16 @@
-import React, { useRef, useEffect, Suspense, useMemo, useState } from 'react'
-import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber'
-import { useTexture, PerspectiveCamera } from '@react-three/drei';
+import React, { useRef, Suspense, useMemo } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber'
+import { useTexture } from '@react-three/drei';
 import './App.css';
 import stone from '../src/assets/images/stone.jpg'
-import * as THREE from 'three'
 import { random } from 'lodash'
 import Content from './Content'
-import { useSpring, animated } from 'react-spring'
-import { Camera } from 'three';
 
 
 const Box = ({ color, ...props }) => {
 
     const position = useMemo(() => {
-        return [random(-3, 3, true), random(-3, 3, true), random(-10, 60, true)]
+        return [random(-5, 5, true), random(-5, 5, true), random(-10, 60, true)]
     }, [])
 
     const mesh = useRef();
@@ -40,8 +37,6 @@ const Box = ({ color, ...props }) => {
 
 
 const Boxes = () => {
-
-
 
     const NUM = 150;
     const spheres = new Array(NUM).fill()
