@@ -10,7 +10,7 @@ import Content from './Content'
 const Box = ({ color, ...props }) => {
 
     const position = useMemo(() => {
-        return [random(-5, 5, true), random(-5, 5, true), random(-10, 60, true)]
+        return [random(-7, 7, true), random(-5, 5, true), random(-10, 60, true)]
     }, [])
 
     const mesh = useRef();
@@ -64,19 +64,20 @@ const Box1 = () => {
 
     const [boxTexture] = useTexture([stone]);
 
+    useFrame(() => (mesh.current.rotation.x = document.body.getBoundingClientRect().top * .01))
 
     return (
         <mesh
             position={position}
             ref={mesh}
-            rotateX={10}
+        // rotation-x={0.1}
+        // rotateX={10}
         >
-            <boxGeometry args={[0.75, 0.75, 10.6]} />
+            <boxGeometry args={[1.2, 1.2, 3.2]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
 }
-
 
 
 const MyCamera = () => {
@@ -89,7 +90,6 @@ const MyCamera = () => {
 
 
 
-
 export default function App(props) {
 
     return (
@@ -99,12 +99,12 @@ export default function App(props) {
                 <pointLight position={[5, 5, 5]} />
                 <Suspense fallback={null}>
                     <Boxes className="boxes" />
-                    <Box1 />
                 </Suspense>
+                <Box1 />
+
                 <MyCamera />
             </Canvas >
-            <Content onScroll={MyCamera} />
-            {/* <Content onScroll={MyCamera} /> */}
+            <Content onScroll={() => { MyCamera(); Box1() }} />
         </div>
     )
 }
