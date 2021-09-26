@@ -86,7 +86,7 @@ const Box1 = () => {
 const Box2 = () => {
 
     const position = useMemo(() => {
-        return [-5, -1, 13]
+        return [-5, -2, 13]
     }, [])
 
     const mesh = useRef();
@@ -115,7 +115,7 @@ const Box2 = () => {
 const Box3 = () => {
 
     const position = useMemo(() => {
-        return [5, 1, 23]
+        return [5, 2, 23]
     }, [])
 
     const mesh = useRef();
