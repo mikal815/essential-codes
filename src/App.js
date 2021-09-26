@@ -99,9 +99,8 @@ export default function App(props) {
                 <pointLight position={[5, 5, 5]} />
                 <Suspense fallback={null}>
                     <Boxes className="boxes" />
+                    <Box1 />
                 </Suspense>
-                <Box1 />
-
                 <MyCamera />
             </Canvas >
             <Content onScroll={() => { MyCamera(); Box1() }} />
