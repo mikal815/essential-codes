@@ -10,7 +10,7 @@ import Content from './Content'
 const Box = ({ color, ...props }) => {
 
     const position = useMemo(() => {
-        return [random(-20, 20, true), random(-5, 5, true), random(-35, 60, true)]
+        return [random(-20, 20, true), random(-6, 6, true), random(-35, 60, true)]
     }, [])
 
     const mesh = useRef();
@@ -54,34 +54,34 @@ const Boxes = () => {
 }
 
 
-// const Box1 = () => {
+const Box1 = () => {
 
-//     const position = useMemo(() => {
-//         return [1, 0, 2]
-//     }, [])
+    const position = useMemo(() => {
+        return [1, 1, -5]
+    }, [])
 
-//     const mesh = useRef();
+    const mesh = useRef();
 
-//     const [boxTexture] = useTexture([stone]);
+    const [boxTexture] = useTexture([stone]);
 
-//     useFrame(() => {
-//         mesh.current.rotation.x = document.body.getBoundingClientRect().top * .002;
-//         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
-//         mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
-//     })
+    useFrame(() => {
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .002;
+        // mesh.current.rotation.y = document.body.getBoundingClientRect().top * -.002;
+    })
 
-//     return (
-//         <mesh
-//             position={position}
-//             ref={mesh}
-//         // rotation-x={0.1}
-//         // rotateX={10}
-//         >
-//             <boxGeometry args={[3, 3, 7]} />
-//             <meshStandardMaterial attach="material" map={boxTexture} />
-//         </mesh >
-//     )
-// }
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        // rotation-x={0.1}
+        // rotateX={10}
+        >
+            <boxGeometry args={[3, 3, 7.5]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
 
 
 const Box2 = () => {
@@ -173,34 +173,7 @@ const Box4 = () => {
 }
 
 
-const Box5 = () => {
 
-    const position = useMemo(() => {
-        return [1, 1, -5]
-    }, [])
-
-    const mesh = useRef();
-
-    const [boxTexture] = useTexture([stone]);
-
-    useFrame(() => {
-        mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
-        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .002;
-        // mesh.current.rotation.y = document.body.getBoundingClientRect().top * -.002;
-    })
-
-    return (
-        <mesh
-            position={position}
-            ref={mesh}
-        // rotation-x={0.1}
-        // rotateX={10}
-        >
-            <boxGeometry args={[3, 3, 7.5]} />
-            <meshStandardMaterial attach="material" map={boxTexture} />
-        </mesh >
-    )
-}
 
 
 const MyCamera = () => {
@@ -223,19 +196,14 @@ export default function App(props) {
                 <pointLight position={[5, 5, 5]} color={0xffffff} />
                 <Suspense fallback={null}>
                     <Boxes className="boxes" />
-                    {/* <Box1 /> */}
+                    <Box1 />
                     <Box2 />
                     <Box3 />
                     <Box4 />
-                    <Box5 />
                 </Suspense>
                 <MyCamera />
             </Canvas >
-            <Content onScroll={() => {
-                MyCamera();
-                // Box1(); 
-                Box2(); Box3(); Box4(); Box5()
-            }} />
+            <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); }} />
         </div>
     )
 }
