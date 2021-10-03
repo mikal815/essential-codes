@@ -216,6 +216,7 @@ h2, h3 {
     /* width: inherit; */
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
   }
 
   .project {
@@ -295,6 +296,15 @@ h2, h3 {
   justify-self: center;
 }
 
+footer a {
+  /* font-size: 18px; */
+  /* letter-spacing: 0.2px; */
+  font-family: "Dominik_Thin", sans-serif;
+  /* font-style: normal; */
+  text-decoration: none;
+  color:white;
+}
+
   ::-webkit-scrollbar {
     width: 15px;
   } 
@@ -319,7 +329,9 @@ h2, h3 {
     background: var(--dark-bg);
     grid-column: 2 / span 10;
     font-size: 1.5rem;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding-top: 35px;
+    padding-bottom: 35px;
     margin-bottom: var(--spacing);
     justify-content: space-around;
   }
