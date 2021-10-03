@@ -96,7 +96,7 @@ const Box2 = () => {
 
     useFrame(() => {
         mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
-        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .001;
         // mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
     })
 
@@ -117,7 +117,7 @@ const Box2 = () => {
 const Box3 = () => {
 
     const position = useMemo(() => {
-        return [5, 2, 19]
+        return [5, -1, 19]
     }, [])
 
     const mesh = useRef();
@@ -154,9 +154,38 @@ const Box4 = () => {
     const [boxTexture] = useTexture([stone]);
 
     useFrame(() => {
-        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
-        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .0002;
+        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
+        // mesh.current.rotation.y = document.body.getBoundingClientRect().top * .0002;
         mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        // rotation-x={0.1}
+        // rotateX={10}
+        >
+            <boxGeometry args={[3, 3, 7.5]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const Box5 = () => {
+
+    const position = useMemo(() => {
+        return [4, -1, 31]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .0002;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.004;
     })
 
     return (
@@ -195,15 +224,16 @@ export default function App(props) {
                 <ambientLight intensity={1.00} color={0xffffff} />
                 <pointLight position={[5, 5, 5]} color={0xffffff} />
                 <Suspense fallback={null}>
-                    <Boxes className="boxes" />
+                    {/* <Boxes className="boxes" /> */}
                     <Box1 />
                     <Box2 />
                     <Box3 />
                     <Box4 />
+                    <Box5 />
                 </Suspense>
                 <MyCamera />
             </Canvas >
-            <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); }} />
+            <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); }} />
         </div>
     )
 }

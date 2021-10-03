@@ -41,16 +41,39 @@ canvas {
 
 }
 
+@font-face {
+  font-family: 'Orbitron Light';
+  src: local('Orbitron Light'), url(./assets/fonts/Orbitron\ Light.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Dominik_Thin';
+  src: local('Dominik_Thin'), url(./assets/fonts/Dominik_Thin.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'dominik.regular';
+  src: local('dominik.regular'), url(./assets/fonts/dominik.regular.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.9);
   --spacing: 350px;
-
-  font-family: brandon-grotesque, sans-serif;
-  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  /* font-family: brandon-grotesque, sans-serif; */
+  /* font-family: "roboto", sans-serif; */
+  font-family: "Dominik_Thin", sans-serif;
+  /* font-family: "PitchSans-Regular", sans-serif; */
+  /* font-weight: 400; */
   font-style: normal;
 }
-
 
 .main {
   width: 100vw;
@@ -65,22 +88,30 @@ canvas {
   grid-template-columns: repeat(12, 1fr);
 }
 
-h1, h2, h3, blockquote {
-  font-family: elevon, sans-serif;
-  font-weight: 700;
+header h1 {
+  margin-top: 0;
+}
+
+h2, h3 {
+  font-family: "Orbitron Light", sans-serif;
+  font-weight: 900;
   font-style: normal;
 }
 
   header {
+    display: grid;
+    font-family: "Orbitron Light", sans-serif;
+    letter-spacing: 10px;
     background: var(--dark-bg);
     grid-column: 2 / span 5;
-    font-size: 2rem;
-    padding: 2rem;
+    font-size: 1.75rem;
+    padding: 2.5rem;
     margin-bottom: var(--spacing);
   }
 
   header p {
     font-size: 1.5rem;
+    margin-bottom: 0;
   }
 
   .name {
@@ -96,10 +127,11 @@ h1, h2, h3, blockquote {
     background-color: white;
     font-size: 3rem;
     display: inline;
-    line-height: 1;
+    line-height: 1.25;
   }
 
   section {
+    display: grid;
     grid-column: 2 / 8;
     padding: 2rem;
     background: var(--dark-bg);
@@ -109,8 +141,14 @@ h1, h2, h3, blockquote {
   }
 
   blockquote {
-    margin: 0;
-    padding: 0;
+    font-family: 
+    "Orbitron Light",
+     sans-serif;
+    font-weight: 900;
+    /* font-style: italic; */
+    /* background-color: white; */
+    /* margin: 0; */
+    /* padding: 0; */
     grid-column: 2 / span 9;
     margin-bottom: var(--spacing);
   }
@@ -120,13 +158,142 @@ h1, h2, h3, blockquote {
     background-color: white;
     font-size: 3rem;
     display: inline;
-    line-height: 1;
+    line-height: 1.25;
   }
 
   .left {
+    display: grid;
     grid-column: 6 / 12;
   }
 
+  .left h2 {
+    font-family: "Orbitron Light", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  justify-self: center;
+  }
+
+  #id {
+    grid-column: span 2 / auto;
+  }
+
+  #services {
+    justify-self: center;
+  }
+
+  .services-item {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .services-item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-inner-title {
+    padding-bottom: 10px;
+    font-family: "dominik.regular", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-column: span 12 / auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  #portfolio-title {
+    justify-self: center;
+    margin-bottom: 0;
+    /* padding-bottom: 25px; */
+  }
+
+  .portfolio-container {
+    /* width: inherit; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project {
+    display: grid;
+    justify-items: center;
+    /* padding-top: 30px; */
+    /* height: 850px; */
+    padding-bottom: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.project img {
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+.caption {
+  height: 120px;
+  font-size: 19px;
+  /* padding-bottom: 100px; */
+  
+}
+
+.inner-title {
+  padding-top: 75px;
+  padding-bottom: 35px;
+  font-family: "dominik.regular", sans-serif;
+  font-size: 1.5rem;
+}
+
+.git-link-container {
+  padding-bottom: 15px;
+}
+
+.git-link {
+  color: rgb(163, 163, 163);
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 19px;
+}
+
+.form {
+  display: grid;
+  justify-self: center;
+}
+
+.input {
+  width: 500px;
+  height: 35px;
+  margin-bottom: 15px;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  color: grey;
+}
+
+.textarea {
+  width: 500px;
+  height: 150px;
+  margin-bottom: 15px;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  color: grey;
+  padding-top: 7px;
+  resize: none;
+}
+
+.btn {
+  margin-bottom: 15px;
+  width: 220px;
+  height: 38px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  background-color: #696969;
+  border: none;
+  justify-self: center;
+}
 
   ::-webkit-scrollbar {
     width: 15px;
