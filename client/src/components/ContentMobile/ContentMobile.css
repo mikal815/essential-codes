@@ -1,3 +1,48 @@
+
+/* html {  */
+  /* background: url('../src/assets/images/corridor.jpg') no-repeat center center fixed;  */
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    /* background-size: cover; */
+  /* } */
+
+  /* body{
+    background: url('../../assets/images/corridor.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+  } */
+
+  .content-mobile {
+    /* background-color: black; */
+    background: url('../../assets/images/corridor.jpg') no-repeat center center fixed; 
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+
+  }
+
+/*  */
+/*  */
+
 @import url("https://use.typekit.net/jmk3xov.css");
 
 canvas {
@@ -12,21 +57,21 @@ canvas {
 
 @font-face {
   font-family: 'Orbitron Light';
-  src: local('Orbitron Light'), url(./assets/fonts/Orbitron\ Light.ttf) format('truetype');
+  src: local('Orbitron Light'), url(../../assets/fonts/Orbitron\ Light.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
 
 @font-face {
   font-family: 'Dominik_Thin';
-  src: local('Dominik_Thin'), url(./assets/fonts/Dominik_Thin.ttf) format('truetype');
+  src: local('Dominik_Thin'), url(../../assets/fonts/Dominik_Thin.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
 
 @font-face {
   font-family: 'dominik.regular';
-  src: local('dominik.regular'), url(./assets/fonts/dominik.regular.ttf) format('truetype');
+  src: local('dominik.regular'), url(../../assets/fonts/dominik.regular.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
@@ -36,7 +81,11 @@ canvas {
   --spacing: 350px;
   font-size: 18px;
   letter-spacing: 0.2px;
+  /* font-family: brandon-grotesque, sans-serif; */
+  /* font-family: "roboto", sans-serif; */
   font-family: "Dominik_Thin", sans-serif;
+  /* font-family: "PitchSans-Regular", sans-serif; */
+  /* font-weight: 400; */
   font-style: normal;
 }
 
@@ -48,6 +97,7 @@ canvas {
   position: absolute;
   margin: 0px auto;
   padding: 120px 0px;
+  
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }

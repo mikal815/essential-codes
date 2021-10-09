@@ -4,39 +4,32 @@ import { useTexture } from '@react-three/drei';
 import './App.css';
 import stone from '../src/assets/images/stone.jpg'
 import { random } from 'lodash'
-import Content from './Content'
+import Content from './components/Content'
+import ContentMobile from './components/ContentMobile'
 import MediaQuery from 'react-responsive';
-import Modal from './components/Modal'
-
 
 
 const Box = ({ color, ...props }) => {
 
     const position = useMemo(() => {
-        return [random(-20, 20, true), random(-6, 6, true), random(-35, 60, true)]
+        return [random(-1, 1, true), random(-1, 1, true), random(-2, 2, true)]
     }, [])
 
     const mesh = useRef();
 
     const [boxTexture] = useTexture([stone]);
 
-
     return (
         <mesh
             {...props}
             position={position}
             ref={mesh}
-        // onClick={(e) => setActive(!active)}
-        // onPointerOver={(e) => setHover(true)}
-        // onPointerOut={(e) => setHover(false)}
         >
-            <boxGeometry args={[3, 3, 7.5]} />
+            <boxGeometry args={[0.2, 0.2, 1]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
 }
-
-
 
 
 const Boxes = () => {
@@ -282,8 +275,6 @@ const MobileBox = () => {
         <mesh
             position={position}
             ref={mesh}
-        // rotation-x={0.1}
-        // rotateX={10}
         >
             <boxGeometry args={[3, 3, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
@@ -291,17 +282,12 @@ const MobileBox = () => {
     )
 }
 
-
-
-
 const MyCamera = () => {
     useFrame(({ camera }) => {
         camera.position.z = document.body.getBoundingClientRect().top * -0.009;
-        // camera.updateMatrix();
     });
     return null;
 }
-
 
 
 export default function App(props) {
@@ -311,11 +297,9 @@ export default function App(props) {
             <MediaQuery minDeviceWidth={850}>
                 <div className="laptop-layout">
                     <Canvas style={{ position: "fixed" }}>
-                        {/* <ambientLight intensity={0.95} color={0xffffff} /> */}
                         <ambientLight intensity={1.00} color={0xffffff} />
                         <pointLight position={[5, 5, 5]} color={0xffffff} />
                         <Suspense fallback={null}>
-                            {/* <Boxes className="boxes" /> */}
                             <Box1 />
                             <Box2 />
                             <Box3 />
@@ -323,7 +307,6 @@ export default function App(props) {
                             <Box5 />
                             <Box6 />
                             <Box7 />
-                            <Modal />
                         </Suspense>
                         <MyCamera />
                     </Canvas >
@@ -334,33 +317,24 @@ export default function App(props) {
             <MediaQuery maxDeviceWidth={500}>
                 <div className="mobile-layout">
                     <Canvas style={{ position: "fixed" }}>
-                        {/* <ambientLight intensity={0.95} color={0xffffff} /> */}
                         <ambientLight intensity={1.00} color={0xffffff} />
                         <pointLight position={[5, 5, 5]} color={0xffffff} />
                         <Suspense fallback={null}>
-                            {/* <Boxes className="boxes" /> */}
-                            <MobileBox />
-                            {/* <Box2 />
-                            <Box3 />
-                            <Box4 />
-                            <Box5 />
-                            <Box6 />
-                            <Box7 /> */}
+                            <Boxes className="boxes" />
+                            {/* <MobileBox /> */}
                         </Suspense>
                         <MyCamera />
                     </Canvas >
-                    <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
+                    <ContentMobile onScroll={() => { MyCamera(); Boxes(); }} />
                 </div>
             </MediaQuery>
 
             <MediaQuery minDeviceWidth={500} maxDeviceWidth={850}>
                 <div className="tablet-layout">
                     <Canvas style={{ position: "fixed" }}>
-                        {/* <ambientLight intensity={0.95} color={0xffffff} /> */}
                         <ambientLight intensity={1.00} color={0xffffff} />
                         <pointLight position={[5, 5, 5]} color={0xffffff} />
                         <Suspense fallback={null}>
-                            {/* <Boxes className="boxes" /> */}
                             <Box1 />
                             <Box2 />
                             <Box3 />
@@ -374,11 +348,6 @@ export default function App(props) {
                     <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
                 </div>
             </MediaQuery>
-
-
-
-
         </>
-
     )
 }

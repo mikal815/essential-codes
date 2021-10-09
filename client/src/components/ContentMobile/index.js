@@ -1,20 +1,16 @@
 import React, { useState } from 'react'
-import './App.css'
-import BPS from './assets/images/BPS.PNG';
-import Icarus from './assets/images/Icarus.PNG';
-import MTME from './assets/images/mtme.PNG';
-import OCHS from './assets/images/OCHS.PNG'
-import Shapes from './assets/images/Shapes.PNG';
-import SurferDepot from './assets/images/surfer-depot.PNG';
+import './ContentMobile.css'
+import BPS from '../../assets/images/BPS.PNG';
+import Icarus from '../../assets/images/Icarus.PNG';
+import MTME from '../../assets/images/mtme.PNG';
+import OCHS from '../../assets/images/OCHS.PNG'
+import Shapes from '../../assets/images/Shapes.PNG';
+import SurferDepot from '../../assets/images/surfer-depot.PNG';
 import axios from 'axios'
-import Modal from './components/Modal'
 import { HashLink as Link } from 'react-router-hash-link';
 
 
-
 export default function Content() {
-
-    // const modalRef = React.useRef();
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -50,7 +46,6 @@ export default function Content() {
             axios.post("/sendMail", dataToSubmit).then(function (response) {
                 console.log(response)
                 if (response.status === 200) {
-                    // openModal()
                     alert('Message Sent!')
                 }
             })
@@ -65,28 +60,22 @@ export default function Content() {
         setMessage('');
     }
 
-    // const openModal = () => {
-    //     modalRef.current.openModal()
-    // };
-
     const validateEmail = (email) => {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
 
     return (
-        <div className="main" id="top-link">
+        <div className="main content-mobile" id="top-link">
 
             <header>
                 <h1>MIKE MENSINGER</h1>
                 <p>Software Developer</p>
             </header>
 
-
             <blockquote>
                 <p>'Putting the pieces together for you and your business'-</p>
             </blockquote>
-
 
             <section id="about-link">
                 <h2>About</h2>
@@ -106,7 +95,6 @@ export default function Content() {
                 <div className="services-item-container">
                     <div className="services-item">
                         <div className="services-inner-title">FRONTEND</div>
-                        {/* <img src={frontend} alt="frontend" /> */}
                         <div>HTML5</div>
                         <div>CSS3/Sass</div>
                         <div>Javascript(ES6)</div>
@@ -114,11 +102,9 @@ export default function Content() {
                         <div>Redux</div>
                         <div>Responsive Design</div>
                         <div>Photoshop</div>
-                        {/* <div className="hidden-dash">-</div> */}
                     </div>
                     <div className="services-item">
                         <div className="services-inner-title">SERVER</div>
-                        {/* <img src={backend} alt="server" /> */}
                         <div className="services-sub-section">
                             <div>Node.js</div>
                             <div>Express</div>
@@ -127,26 +113,20 @@ export default function Content() {
                             <div>Payment systems</div>
                             <div>Caching</div>
                             <div>Configuration</div>
-                            {/* <div className="hidden-dash">-</div> */}
                         </div>
                     </div>
                     <div className="services-item">
                         <div className="services-inner-title">DATABASE</div>
-                        {/* <img src={database} alt="database" /> */}
                         <div className="services-sub-section">
                             <div>MongoDB</div>
                             <div>MySQL</div>
                             <div>Password hashing</div>
                             <div>Authentication</div>
                             <div>Authorization</div>
-                            {/* <div className="hidden-dash">-</div>
-                            <div className="hidden-dash">-</div>
-                            <div className="hidden-dash">-</div> */}
                         </div>
                     </div>
                     <div className="services-item">
                         <div className="services-inner-title">ADDITIONAL</div>
-                        {/* <img src={additional} alt="additional" /> */}
                         <div className="services-sub-section">
                             <div>Debugging</div>
                             <div>Testing/Error handling</div>
@@ -167,12 +147,11 @@ export default function Content() {
                     <div className="project">
                         <div className="inner-title">SURFER DEPOT</div>
                         <a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                            <img src={SurferDepot} alt="Surfer Depot" /></a>
-
+                            <img src={SurferDepot} alt="Surfer Depot" />
+                        </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/surfer-depot" className="git-link">VIEW CODE</a>
                         </div>
-
                         <div className="caption">
                             Full stack e-commerce web app. Front-end tech used:
                             React, Redux, Material-UI, Bootstrap, HTML5, CSS3.
@@ -189,59 +168,59 @@ export default function Content() {
 
                     <div className="project">
                         <div className="inner-title">ICARUS TRAVEL</div>
-                        <a href="https://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Icarus} alt="Icarus" /></a>
-
+                        <a href="https://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer">
+                            <img src={Icarus} alt="Icarus" />
+                        </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/icarus" className="git-link">VIEW CODE</a>
                         </div>
-
                         <div className="caption">
                             Website built with HTML5, CSS, and Bootstrap.  Features scrolling image carousels and various animations.
-                    </div>
+                        </div>
                     </div>
 
                     <div className="project">
                         <div className="inner-title">SHAPE SHIFTER</div>
-                        <a href="https://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Shapes} alt="Shape Shifter" /></a>
-
+                        <a href="https://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer">
+                            <img src={Shapes} alt="Shape Shifter" />
+                        </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/clicky-game" className="git-link">VIEW CODE</a>
                         </div>
-
                         <div className="caption">
                             Memory game build with React. Goal is to click each shape
                             without clicking the same shape twice. Images are randomly repositioned
                             after every click increasing difficulty. 12 shapes in total; once your score
                             reaches 12 you win. Click a shape twice and score is reset to zero and a new game begins. Top
                             score indicator helps you gauge your progress.
-                    </div>
+                        </div>
                     </div>
 
                     <div className="project">
                         <div className="inner-title">BOARDWALK PIER STAGE</div>
-                        <a href="https://bps-site.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={BPS} alt="Boardwalk Pier Stage" /></a>
-
+                        <a href="https://bps-site.surge.sh/" target="_blank" rel="noopener noreferrer">
+                            <img src={BPS} alt="Boardwalk Pier Stage" />
+                        </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/the-event" className="git-link">VIEW CODE</a>
                         </div>
-
                         <div className="caption">
                             Featuring React on the frontend as well as a countdown clock which displays the amount of
                             days, hours, minutes and seconds until the event. Other features include a carousel and a side menu drawer.
                             After clicking a link the user is vertically scrolled directly to the appropriate content.
                             Animations give a zoom effect on certain elements. An iframe shows the venue's
                             location on google maps.
-                    </div>
+                        </div>
                     </div>
 
                     <div className="project">
                         <div className="inner-title">OCHS BASEBALL</div>
-                        <a href="https://ochs-baseball.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={OCHS} alt="OCHS Baseball" /></a>
-
+                        <a href="https://ochs-baseball.surge.sh/" target="_blank" rel="noopener noreferrer">
+                            <img src={OCHS} alt="OCHS Baseball" />
+                        </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/ochs" className="git-link">VIEW CODE</a>
                         </div>
-
                         <div className="caption">
                             Featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid.
                     </div>
@@ -249,12 +228,12 @@ export default function Content() {
 
                     <div className="project">
                         <div className="inner-title">MUSIC TO MY EARS</div>
-                        <a href="https://music-to-my-ears-1.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src={MTME} alt="Music to My Ears" /></a>
-
+                        <a href="https://music-to-my-ears-1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <img src={MTME} alt="Music to My Ears" />
+                        </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/ear-trainer" className="git-link">VIEW CODE</a>
                         </div>
-
                         <div className="caption">
                             Ear training app for musicians using intervals.
                             The app runs a sequence of two notes consecutively
@@ -270,9 +249,7 @@ export default function Content() {
             </section>
 
             <blockquote>
-                <div className="tag-line">'Programming the future!'-<br></br>
-                    {/* <p className="name">-Michael Mensinger <i>EC Developer</i></p> */}
-                </div>
+                <div className="tag-line">'Programming the future!'-<br></br></div>
             </blockquote>
 
             <section className="left">
@@ -282,15 +259,6 @@ export default function Content() {
                     <input className="input" id="email" placeholder="Email" type="email" value={email} onChange={handleChange}></input><br></br>
                     <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
                     <button className="btn span-row-2" onClick={handleSubmit}>Send</button>
-                    {/* <Modal ref={modalRef}>
-                        <h1>Thanks</h1>
-                        <p>
-                            Message Sent Successfully!
-                        </p>
-                        <button onClick={() => modalRef.current.close()}>
-                            Close
-                        </button>
-                    </Modal> */}
                 </form>
             </section>
 
