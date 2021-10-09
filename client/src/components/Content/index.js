@@ -66,7 +66,7 @@ export default function Content() {
     }
 
     return (
-        <div className="main" id="top-link">
+        <div className="main content-laptop" id="top-link">
 
             <header>
                 <h1>MIKE MENSINGER</h1>
