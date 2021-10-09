@@ -12,10 +12,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 
 
-
 export default function Content() {
 
-    const modalRef = React.useRef();
+    // const modalRef = React.useRef();
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -51,7 +50,8 @@ export default function Content() {
             axios.post("/sendMail", dataToSubmit).then(function (response) {
                 console.log(response)
                 if (response.status === 200) {
-                    openModal()
+                    // openModal()
+                    alert('Message Sent!')
                 }
             })
 
@@ -65,9 +65,9 @@ export default function Content() {
         setMessage('');
     }
 
-    const openModal = () => {
-        modalRef.current.openModal()
-    };
+    // const openModal = () => {
+    //     modalRef.current.openModal()
+    // };
 
     const validateEmail = (email) => {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -277,29 +277,22 @@ export default function Content() {
 
             <section className="left">
                 <h2>Contact</h2>
-
                 <form className="form span-row-2" onSubmit={handleSubmit}>
                     <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
                     <input className="input" id="email" placeholder="Email" type="email" value={email} onChange={handleChange}></input><br></br>
                     <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
                     <button className="btn span-row-2" onClick={handleSubmit}>Send</button>
-                    <Modal ref={modalRef}>
+                    {/* <Modal ref={modalRef}>
                         <h1>Thanks</h1>
                         <p>
                             Message Sent Successfully!
-                    </p>
+                        </p>
                         <button onClick={() => modalRef.current.close()}>
                             Close
-                    </button>
-                    </Modal>
+                        </button>
+                    </Modal> */}
                 </form>
-
             </section>
-
-            {/* <section className="light">
-                <h2>Contact</h2>
-                <p>Email: EssentialCodes@ecodes.com</p>
-            </section> */}
 
             <footer>
                 <Link smooth to="#top-link">Top</Link>
@@ -307,8 +300,6 @@ export default function Content() {
                 <Link smooth to="#services-link">Services</Link>
                 <Link smooth to="#projects-link">Projects</Link>
             </footer>
-
-
         </div>
     )
 }

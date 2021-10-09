@@ -5,6 +5,9 @@ import './App.css';
 import stone from '../src/assets/images/stone.jpg'
 import { random } from 'lodash'
 import Content from './Content'
+import MediaQuery from 'react-responsive';
+import Modal from './components/Modal'
+
 
 
 const Box = ({ color, ...props }) => {
@@ -201,6 +204,92 @@ const Box5 = () => {
     )
 }
 
+const Box6 = () => {
+
+    const position = useMemo(() => {
+        return [5, -1, 49]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .00025;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.004;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        // rotation-x={0.1}
+        // rotateX={10}
+        >
+            <boxGeometry args={[3, 3, 7.5]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const Box7 = () => {
+
+    const position = useMemo(() => {
+        return [-5, -1, 55]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .00025;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.0045;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        // rotation-x={0.1}
+        // rotateX={10}
+        >
+            <boxGeometry args={[3, 3, 7.5]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const MobileBox = () => {
+
+    const position = useMemo(() => {
+        return [0, 0, -20]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .00025;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.004;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        // rotation-x={0.1}
+        // rotateX={10}
+        >
+            <boxGeometry args={[3, 3, 7.5]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
 
 
 
@@ -218,22 +307,78 @@ const MyCamera = () => {
 export default function App(props) {
 
     return (
-        <div >
-            <Canvas style={{ position: "fixed" }}>
-                {/* <ambientLight intensity={0.95} color={0xffffff} /> */}
-                <ambientLight intensity={1.00} color={0xffffff} />
-                <pointLight position={[5, 5, 5]} color={0xffffff} />
-                <Suspense fallback={null}>
-                    {/* <Boxes className="boxes" /> */}
-                    <Box1 />
-                    <Box2 />
-                    <Box3 />
-                    <Box4 />
-                    <Box5 />
-                </Suspense>
-                <MyCamera />
-            </Canvas >
-            <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); }} />
-        </div>
+        <>
+            <MediaQuery minDeviceWidth={850}>
+                <div className="laptop-layout">
+                    <Canvas style={{ position: "fixed" }}>
+                        {/* <ambientLight intensity={0.95} color={0xffffff} /> */}
+                        <ambientLight intensity={1.00} color={0xffffff} />
+                        <pointLight position={[5, 5, 5]} color={0xffffff} />
+                        <Suspense fallback={null}>
+                            {/* <Boxes className="boxes" /> */}
+                            <Box1 />
+                            <Box2 />
+                            <Box3 />
+                            <Box4 />
+                            <Box5 />
+                            <Box6 />
+                            <Box7 />
+                            <Modal />
+                        </Suspense>
+                        <MyCamera />
+                    </Canvas >
+                    <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
+                </div>
+            </MediaQuery>
+
+            <MediaQuery maxDeviceWidth={500}>
+                <div className="mobile-layout">
+                    <Canvas style={{ position: "fixed" }}>
+                        {/* <ambientLight intensity={0.95} color={0xffffff} /> */}
+                        <ambientLight intensity={1.00} color={0xffffff} />
+                        <pointLight position={[5, 5, 5]} color={0xffffff} />
+                        <Suspense fallback={null}>
+                            {/* <Boxes className="boxes" /> */}
+                            <MobileBox />
+                            {/* <Box2 />
+                            <Box3 />
+                            <Box4 />
+                            <Box5 />
+                            <Box6 />
+                            <Box7 /> */}
+                        </Suspense>
+                        <MyCamera />
+                    </Canvas >
+                    <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
+                </div>
+            </MediaQuery>
+
+            <MediaQuery minDeviceWidth={500} maxDeviceWidth={850}>
+                <div className="tablet-layout">
+                    <Canvas style={{ position: "fixed" }}>
+                        {/* <ambientLight intensity={0.95} color={0xffffff} /> */}
+                        <ambientLight intensity={1.00} color={0xffffff} />
+                        <pointLight position={[5, 5, 5]} color={0xffffff} />
+                        <Suspense fallback={null}>
+                            {/* <Boxes className="boxes" /> */}
+                            <Box1 />
+                            <Box2 />
+                            <Box3 />
+                            <Box4 />
+                            <Box5 />
+                            <Box6 />
+                            <Box7 />
+                        </Suspense>
+                        <MyCamera />
+                    </Canvas >
+                    <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
+                </div>
+            </MediaQuery>
+
+
+
+
+        </>
+
     )
 }
