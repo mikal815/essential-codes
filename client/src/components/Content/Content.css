@@ -1,74 +1,6 @@
-  body{
-    background: url('../../assets/images/corridor.jpg'); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow-x: hidden;
-
-    margin-top: 0px; 
-    margin-bottom: 0px; 
-    margin-left: 0px; 
-    margin-right: 0px;
-    padding: 0;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    /* background-attachment:scroll; */
-
-    /* position: absolute; */
-  }
-  
-
-@import url("https://use.typekit.net/jmk3xov.css");
-
-canvas {
-  /* IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  /* IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  /* IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  /* position: fixed; must also be included as inline style in App.js Canvas component */
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-@font-face {
-  font-family: 'Orbitron Light';
-  src: local('Orbitron Light'), url(../../assets/fonts/Orbitron\ Light.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
-}
-
-@font-face {
-  font-family: 'Dominik_Thin';
-  src: local('Dominik_Thin'), url(../../assets/fonts/Dominik_Thin.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
-}
-
-@font-face {
-  font-family: 'dominik.regular';
-  src: local('dominik.regular'), url(../../assets/fonts/dominik.regular.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
-}
-
-:root {
-  --dark-bg: rgba(15, 15, 15, 0.9);
-  --spacing: 350px;
-  font-size: 18px;
-  letter-spacing: 0.2px;
-  /* font-family: brandon-grotesque, sans-serif; */
-  /* font-family: "roboto", sans-serif; */
-  font-family: "Dominik_Thin", sans-serif;
-  /* font-family: "PitchSans-Regular", sans-serif; */
-  /* font-weight: 400; */
-  font-style: normal;
-}
-
-.main {
+.content-laptop {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   width: 100vw;
   width: 100%;
   color: white;
@@ -76,9 +8,6 @@ canvas {
   position: absolute;
   margin: 0px auto;
   padding: 120px 0px;
-  
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
 }
 
 header h1 {
@@ -138,10 +67,6 @@ h2, h3 {
     "Orbitron Light",
      sans-serif;
     font-weight: 900;
-    /* font-style: italic; */
-    /* background-color: white; */
-    /* margin: 0; */
-    /* padding: 0; */
     grid-column: 2 / span 9;
     margin-bottom: var(--spacing);
   }
@@ -202,11 +127,9 @@ h2, h3 {
   #portfolio-title {
     justify-self: center;
     margin-bottom: 0;
-    /* padding-bottom: 25px; */
   }
 
   .portfolio-container {
-    /* width: inherit; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 45px;
@@ -215,8 +138,6 @@ h2, h3 {
   .project {
     display: grid;
     justify-items: center;
-    /* padding-top: 30px; */
-    /* height: 850px; */
     padding-bottom: 150px;
     padding-left: 15px;
     padding-right: 15px;
@@ -230,8 +151,6 @@ h2, h3 {
 .caption {
   height: 120px;
   font-size: 19px;
-  /* padding-bottom: 100px; */
-  
 }
 
 .inner-title {
@@ -290,10 +209,7 @@ h2, h3 {
 }
 
 footer a {
-  /* font-size: 18px; */
-  /* letter-spacing: 0.2px; */
   font-family: "Dominik_Thin", sans-serif;
-  /* font-style: normal; */
   text-decoration: none;
   color:white;
 }
@@ -322,7 +238,6 @@ footer a {
     background: var(--dark-bg);
     grid-column: 2 / span 10;
     font-size: 1.5rem;
-    /* padding: 1rem; */
     padding-top: 35px;
     padding-bottom: 35px;
     margin-bottom: var(--spacing);

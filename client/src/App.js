@@ -315,7 +315,7 @@ export default function App(props) {
             </MediaQuery>
 
             <MediaQuery maxDeviceWidth={500}>
-                <div className="mobile-layout" style={{ backgroundPosition: window.screenTop }}>
+                <div className="mobile-layout">
                     <Canvas style={{ position: "fixed" }}>
                         <ambientLight intensity={1.00} color={0xffffff} />
                         <pointLight position={[5, 5, 5]} color={0xffffff} />
