@@ -22,9 +22,27 @@
     padding: 0;
   } */
 
-  .content-mobile {
+  body .content-mobile {
     /* background-color: black; */
-    /* background: url('../../assets/images/corridor.jpg') no-repeat center center fixed;  */
+    /* background: url('../../assets/images/corridor.jpg');  */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* height: 100vh; */
+    height: auto;
+
+    width: 100vw;
+    width: 100%;
+    color: white;
+    z-index: 99;
+    position: absolute;
+    margin: 0px auto;
+    padding: 120px 0px;
+  
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -32,11 +50,11 @@
     background-size: cover;
     overflow-x: hidden;
 
-    margin-top: 0px; 
+    /* margin-top: 0px; 
     margin-bottom: 0px; 
     margin-left: 0px; 
     margin-right: 0px;
-    padding: 0;
+    padding: 0; */
 
   }
 

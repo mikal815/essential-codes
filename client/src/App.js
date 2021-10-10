@@ -12,7 +12,7 @@ import MediaQuery from 'react-responsive';
 const Box = ({ color, ...props }) => {
 
     const position = useMemo(() => {
-        return [random(-1, 1, true), random(-1, 1, true), random(-2, 2, true)]
+        return [random(-1, 1, true), random(-1, 1, true), random(-120, 120, true)]
     }, [])
 
     const mesh = useRef();
@@ -34,7 +34,7 @@ const Box = ({ color, ...props }) => {
 
 const Boxes = () => {
 
-    const NUM = 20;
+    const NUM = 120;
     const spheres = new Array(NUM).fill()
     return (
         <>
