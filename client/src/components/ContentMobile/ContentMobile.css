@@ -21,6 +21,11 @@
     margin-right: 0px;
     padding: 0;
   } */
+  /* @media only screen and (max-width: 500px) {
+    body {
+      height: auto;
+    }
+  } */
 
   body .content-mobile {
     /* background-color: black; */
@@ -29,7 +34,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    background-attachment: scroll;
     /* height: 100vh; */
     height: auto;
 
