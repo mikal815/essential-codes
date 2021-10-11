@@ -60,6 +60,11 @@ canvas {
   padding: 0;
 } */
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .img {
   background: url('./assets/images/corridor.jpg');
   background-position: center;
