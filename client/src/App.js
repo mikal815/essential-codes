@@ -311,6 +311,7 @@ export default function App(props) {
                         <MyCamera />
                     </Canvas >
                     <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
+                    <div className="img" role="img"></div>
                 </div>
             </MediaQuery>
 
@@ -326,6 +327,7 @@ export default function App(props) {
                         <MyCamera />
                     </Canvas >
                     <ContentMobile onScroll={() => { MyCamera(); Boxes(); }} />
+                    <div className="img" role="img"></div>
                 </div>
             </MediaQuery>
 
