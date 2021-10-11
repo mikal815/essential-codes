@@ -12,7 +12,7 @@
     overflow-x: hidden;
   }
 
-header h1 {
+.header-mobile h1 {
   margin-top: 0;
 }
 
@@ -22,19 +22,19 @@ h2, h3 {
   font-style: normal;
 }
 
-  header {
+  .header-mobile {
     display: grid;
     font-family: "Orbitron Light", sans-serif;
     letter-spacing: 10px;
     background: var(--dark-bg);
-    grid-column: 2 / span 5;
-    font-size: 1.75rem;
-    padding: 2.5rem;
+    grid-column: 2 / span 10;
+    font-size: 0.75rem;
+    padding: 1.5rem;
     margin-bottom: var(--spacing);
   }
 
-  header p {
-    font-size: 1.5rem;
+  .header-mobile p {
+    font-size: 1rem;
     margin-bottom: 0;
   }
 
@@ -54,29 +54,46 @@ h2, h3 {
     line-height: 1.25;
   }
 
-  section {
+  .about {
     display: grid;
-    grid-column: 2 / 8;
-    padding: 2rem;
+    grid-column: 2 / 12;
+    padding: 1rem;
     background: var(--dark-bg);
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
   }
 
-  blockquote {
+  .blockquote {
     font-family: "Orbitron Light",sans-serif;
     font-weight: 900;
-    grid-column: 2 / span 9;
+    grid-column: 2 / span 11;
     margin-bottom: var(--spacing);
   }
 
-  blockquote p {
+  .blockquote p {
     color: black;
     background-color: white;
-    font-size: 3rem;
+    font-size: 1.5rem;
     display: inline;
-    line-height: 1.25;
+    line-height: 2.25;
+  }
+
+  .services-mobile {
+    display: grid;
+    grid-column: 2 / span 10;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  .services-mobile h2 {
+    font-family: "Orbitron Light", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    justify-self: center;
   }
 
   .left {
@@ -110,10 +127,10 @@ h2, h3 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .services-inner-title {
+  .services-inner-title-mobile {
     padding-bottom: 10px;
     font-family: "dominik.regular", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
   }
 

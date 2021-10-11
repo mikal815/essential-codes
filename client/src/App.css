@@ -40,26 +40,6 @@ canvas {
   font-style: normal;
 }
 
-/* body {
-  background: url('./assets/images/corridor.jpg'); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow-x: hidden;
-
-  margin-top: 0px; 
-  margin-bottom: 0px; 
-  margin-left: 0px; 
-  margin-right: 0px;
-  padding: 0;
-} */
-
 body {
   margin: 0;
   padding: 0;

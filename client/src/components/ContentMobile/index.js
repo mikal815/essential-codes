@@ -69,16 +69,16 @@ export default function Content() {
         // <div className="main content-mobile" id="top-link">
         <div className="content-mobile" id="top-link">
 
-            <header>
+            <div className="header-mobile">
                 <h1>MIKE MENSINGER</h1>
                 <p>Software Developer</p>
-            </header>
+            </div>
 
-            <blockquote>
+            <div className="blockquote">
                 <p>'Putting the pieces together for you and your business'-</p>
-            </blockquote>
+            </div>
 
-            <section id="about-link">
+            <div className="about">
                 <h2>About</h2>
                 <p>
                     Software developer building good looking functional websites and apps while
@@ -89,13 +89,13 @@ export default function Content() {
                     The New York Code + Design Academy.  I have experience working collaboratively
                     on programming projects.
                 </p>
-            </section>
+            </div>
 
-            <section className="left" id="services-link">
+            <div className="services-mobile" id="services-link">
                 <h2 id="services">Services</h2>
                 <div className="services-item-container">
                     <div className="services-item">
-                        <div className="services-inner-title">FRONTEND</div>
+                        <div className="services-inner-title-mobile">FRONTEND</div>
                         <div>HTML5</div>
                         <div>CSS3/Sass</div>
                         <div>Javascript(ES6)</div>
@@ -105,7 +105,7 @@ export default function Content() {
                         <div>Photoshop</div>
                     </div>
                     <div className="services-item">
-                        <div className="services-inner-title">SERVER</div>
+                        <div className="services-inner-title-mobile">SERVER</div>
                         <div className="services-sub-section">
                             <div>Node.js</div>
                             <div>Express</div>
@@ -117,7 +117,7 @@ export default function Content() {
                         </div>
                     </div>
                     <div className="services-item">
-                        <div className="services-inner-title">DATABASE</div>
+                        <div className="services-inner-title-mobile">DATABASE</div>
                         <div className="services-sub-section">
                             <div>MongoDB</div>
                             <div>MySQL</div>
@@ -127,7 +127,7 @@ export default function Content() {
                         </div>
                     </div>
                     <div className="services-item">
-                        <div className="services-inner-title">ADDITIONAL</div>
+                        <div className="services-inner-title-mobile">ADDITIONAL</div>
                         <div className="services-sub-section">
                             <div>Debugging</div>
                             <div>Testing/Error handling</div>
@@ -140,7 +140,7 @@ export default function Content() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <section className="portfolio" id="projects-link">
                 <h2 id="portfolio-title">Projects</h2>
