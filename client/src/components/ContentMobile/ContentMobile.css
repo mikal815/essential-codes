@@ -8,7 +8,7 @@
     z-index: 99;
     position: absolute;
     margin: 0px auto;
-    padding: 120px 0px;
+    padding: 180px 0px;
     overflow-x: hidden;
   }
 
@@ -30,7 +30,8 @@ h2, h3 {
     grid-column: 2 / span 10;
     font-size: 0.75rem;
     padding: 1.5rem;
-    margin-bottom: var(--spacing);
+    /* margin-bottom: var(--spacing); */
+    margin-bottom: 25rem;
   }
 
   .header-mobile p {
@@ -59,7 +60,7 @@ h2, h3 {
     grid-column: 2 / 12;
     padding: 1.2rem;
     background: var(--dark-bg);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
   }
@@ -83,7 +84,7 @@ h2, h3 {
     background-color: white;
     font-size: 1.5rem;
     display: inline;
-    line-height: 2.25;
+    /* line-height: 2.25; */
   }
 
   .services-mobile {

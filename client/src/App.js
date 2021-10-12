@@ -258,7 +258,7 @@ const Box7 = () => {
 const MobileBox = () => {
 
     const position = useMemo(() => {
-        return [0, -0.5, -5]
+        return [0, 0, -3.2]
     }, [])
 
     const mesh = useRef();
@@ -279,11 +279,66 @@ const MobileBox = () => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[1.5, 1.5, 4]} />
+            <boxGeometry args={[1, 1, 3]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
 }
+
+const MobileBox2 = () => {
+
+    const position = useMemo(() => {
+        return [-1, -1, 10]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .001;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        >
+            <boxGeometry args={[1, 1, 3]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const MobileBox3 = () => {
+
+    const position = useMemo(() => {
+        return [1, -1, 20]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .003;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        >
+            <boxGeometry args={[1, 1, 3]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+
 
 const MyCamera = () => {
     useFrame(({ camera }) => {
@@ -324,8 +379,9 @@ export default function App(props) {
                         <ambientLight intensity={1.00} color={0xffffff} />
                         <pointLight position={[5, 5, 5]} color={0xffffff} />
                         <Suspense fallback={null}>
-                            {/* <Boxes className="boxes" /> */}
                             <MobileBox />
+                            <MobileBox2 />
+                            <MobileBox3 />
                         </Suspense>
                         <MyCamera />
                     </Canvas >
