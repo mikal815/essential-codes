@@ -58,7 +58,10 @@ h2, h3 {
   .about {
     display: grid;
     grid-column: 2 / 12;
-    padding: 1.2rem;
+    padding-top: 0.5rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1rem;
+    padding-left: 1.6rem;
     background: var(--dark-bg);
     font-size: 0.9rem;
     line-height: 1.5;
@@ -70,6 +73,7 @@ h2, h3 {
     font-weight: 900;
     font-style: normal;
     justify-self: center;
+    margin-bottom: 0;
   }
 
   .blockquote {
@@ -87,12 +91,16 @@ h2, h3 {
     /* line-height: 2.25; */
   }
 
+  #services {
+    margin-bottom: 0;
+  }
+
   .services-mobile {
     display: grid;
     grid-column: 2 / span 10;
     padding: 1rem;
     background: var(--dark-bg);
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
   }
@@ -133,6 +141,7 @@ h2, h3 {
   .services-item-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 14px;
   }
 
   .services-inner-title-mobile {
@@ -142,11 +151,11 @@ h2, h3 {
     font-weight: bold;
   }
 
-  .portfolio {
+  .portfolio-mobile {
     display: grid;
-    grid-column: span 12 / auto;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    grid-column: 2 / span 10;
+    /* margin-left: 10vw;
+    margin-right: 10vw; */
   }
 
   #portfolio-title {

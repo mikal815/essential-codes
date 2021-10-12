@@ -142,7 +142,7 @@ export default function Content() {
                 </div>
             </div>
 
-            <section className="portfolio" id="projects-link">
+            <section className="portfolio-mobile" id="projects-link">
                 <h2 id="portfolio-title">Projects</h2>
                 <div className="portfolio-container">
                     <div className="project">
