@@ -142,18 +142,18 @@ export default function Content() {
                 </div>
             </div>
 
-            <section className="portfolio-mobile" id="projects-link">
-                <h2 id="portfolio-title">Projects</h2>
-                <div className="portfolio-container">
-                    <div className="project">
-                        <div className="inner-title">SURFER DEPOT</div>
+            <div className="portfolio-mobile" id="projects-link">
+                <h2 id="portfolio-title-mobile">Projects</h2>
+                <div className="portfolio-container-mobile">
+                    <div className="project-mobile-sd">
+                        <div className="inner-title-mobile">SURFER DEPOT</div>
                         <a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                             <img src={SurferDepot} alt="Surfer Depot" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/surfer-depot" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption">
+                        <div className="caption-mobile">
                             Full stack e-commerce web app. Front-end tech used:
                             React, Redux, Material-UI, Bootstrap, HTML5, CSS3.
                             Back-end tech used: MongoDB, Node.js, and Express.
@@ -164,31 +164,31 @@ export default function Content() {
                             Admin view allows the administrator to add new products onto
                             the
                             site. Users must pass authentication to access the admin area.
-                    </div>
+                        </div>
                     </div>
 
-                    <div className="project">
-                        <div className="inner-title">ICARUS TRAVEL</div>
+                    <div className="project-mobile-it">
+                        <div className="inner-title-mobile">ICARUS TRAVEL</div>
                         <a href="https://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={Icarus} alt="Icarus" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/icarus" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption">
+                        <div className="caption-mobile">
                             Website built with HTML5, CSS, and Bootstrap.  Features scrolling image carousels and various animations.
                         </div>
                     </div>
 
-                    <div className="project">
-                        <div className="inner-title">SHAPE SHIFTER</div>
+                    <div className="project-mobile-ss">
+                        <div className="inner-title-mobile">SHAPE SHIFTER</div>
                         <a href="https://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={Shapes} alt="Shape Shifter" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/clicky-game" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption">
+                        <div className="caption-mobile">
                             Memory game build with React. Goal is to click each shape
                             without clicking the same shape twice. Images are randomly repositioned
                             after every click increasing difficulty. 12 shapes in total; once your score
@@ -197,15 +197,15 @@ export default function Content() {
                         </div>
                     </div>
 
-                    <div className="project">
-                        <div className="inner-title">BOARDWALK PIER STAGE</div>
+                    <div className="project-mobile-bps">
+                        <div className="inner-title-mobile">BOARDWALK PIER STAGE</div>
                         <a href="https://bps-site.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={BPS} alt="Boardwalk Pier Stage" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/the-event" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption">
+                        <div className="caption-mobile">
                             Featuring React on the frontend as well as a countdown clock which displays the amount of
                             days, hours, minutes and seconds until the event. Other features include a carousel and a side menu drawer.
                             After clicking a link the user is vertically scrolled directly to the appropriate content.
@@ -214,28 +214,28 @@ export default function Content() {
                         </div>
                     </div>
 
-                    <div className="project">
-                        <div className="inner-title">OCHS BASEBALL</div>
+                    <div className="project-mobile-ochs">
+                        <div className="inner-title-mobile">OCHS BASEBALL</div>
                         <a href="https://ochs-baseball.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={OCHS} alt="OCHS Baseball" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/ochs" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption">
+                        <div className="caption-mobile">
                             Featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid.
                     </div>
                     </div>
 
-                    <div className="project">
-                        <div className="inner-title">MUSIC TO MY EARS</div>
+                    <div className="project-mobile-mtme">
+                        <div className="inner-title-mobile">MUSIC TO MY EARS</div>
                         <a href="https://music-to-my-ears-1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                             <img src={MTME} alt="Music to My Ears" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/ear-trainer" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption">
+                        <div className="caption-mobile">
                             Ear training app for musicians using intervals.
                             The app runs a sequence of two notes consecutively
                             and the user must mimic the same sequence using only their ears as a guide. The key
@@ -245,9 +245,8 @@ export default function Content() {
                             Passport.js.
                     </div>
                     </div>
-
                 </div>
-            </section>
+            </div>
 
             <blockquote>
                 <div className="tag-line">'Programming the future!'-<br></br></div>
