@@ -24,14 +24,14 @@ h2, h3 {
 
   .header-mobile {
     display: grid;
+    grid-column: 2 / span 10;
     font-family: "Orbitron Light", sans-serif;
     letter-spacing: 10px;
     background: var(--dark-bg);
-    grid-column: 2 / span 10;
     font-size: 0.75rem;
     padding: 1.5rem;
-    /* margin-bottom: var(--spacing); */
     margin-bottom: 25rem;
+    place-content: center;
   }
 
   .header-mobile p {
@@ -57,7 +57,10 @@ h2, h3 {
 
   .about {
     display: grid;
-    grid-column: 2 / 12;
+    grid-column: span 12 / auto;
+    /* grid-column: 2 / 12; */
+    margin-right: 5vw;
+    margin-left: 5vw;
     padding-top: 0.5rem;
     padding-right: 1.6rem;
     padding-bottom: 1rem;
@@ -97,7 +100,10 @@ h2, h3 {
 
   .services-mobile {
     display: grid;
-    grid-column: 2 / span 10;
+    /* grid-column: 2 / span 10; */
+    grid-column: span 12 / auto;
+    margin-right: 5vw;
+    margin-left: 5vw;
     padding: 1rem;
     background: var(--dark-bg);
     font-size: 0.9rem;
@@ -154,74 +160,88 @@ h2, h3 {
   .portfolio-mobile {
     display: grid;
     place-content: center;
-    grid-column: 2 / span 10;
-    /* height: 100%; */
-    background-color: rgba(15, 15, 15, 0.9);
-    background: var(--dark-bg);
+    grid-column: span 12 / auto;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    /* background-color: rgba(15, 15, 15, 0.9); */
     font-size: 1.25rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
   }
 
   #portfolio-title-mobile {
-    grid-column: span 2 / auto;
+    /* grid-column: span 12 / auto; */
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
     justify-self: center;
     margin-bottom: 0;
     font-size: 1.35em;
   }
 
   .portfolio-container-mobile {
-    display: grid;
-    grid-column: span 2 / auto;
+    /* display: grid;
+    grid-column: span 2 / auto; */
     padding-bottom: 10rem;
   }
 
   .project-mobile-sd {
     display: grid;
+    background-color: rgba(15, 15, 15, 0.9);
     justify-items: center;
     padding-bottom: 23rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-bottom: 10px;
 }
 
 .project-mobile-it {
   display: grid;
+  background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
   padding-bottom: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 10px;
 }
 
 .project-mobile-ss {
   display: grid;
+  background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
   padding-bottom: 16rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 10px;
 }
 
 .project-mobile-bps {
   display: grid;
+  background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
   padding-bottom: 18rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 10px;
 }
 
 .project-mobile-ochs {
   display: grid;
+  background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
   padding-bottom: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 10px;
 }
 
 .project-mobile-mtme {
   display: grid;
+  background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
-  padding-bottom: 150px;
+  padding-bottom: 270px;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 10px;
 }
 
 

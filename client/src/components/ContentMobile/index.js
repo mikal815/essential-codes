@@ -143,9 +143,9 @@ export default function Content() {
             </div>
 
             <div className="portfolio-mobile" id="projects-link">
-                <h2 id="portfolio-title-mobile">Projects</h2>
                 <div className="portfolio-container-mobile">
                     <div className="project-mobile-sd">
+                        <h2 id="portfolio-title-mobile">Projects</h2>
                         <div className="inner-title-mobile">SURFER DEPOT</div>
                         <a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                             <img src={SurferDepot} alt="Surfer Depot" />
