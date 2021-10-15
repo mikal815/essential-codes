@@ -324,6 +324,9 @@ h2, h3 {
   color: grey;
   justify-self: center;
   text-align: center;
+
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 .textarea {
