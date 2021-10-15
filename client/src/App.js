@@ -351,7 +351,34 @@ const MobileBox4 = () => {
     useFrame(() => {
         mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
-        mesh.current.rotation.z = document.body.getBoundingClientRect().top * 0.01;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * 0.009;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        >
+            <boxGeometry args={[1, 1, 3]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const MobileBox5 = () => {
+
+    const position = useMemo(() => {
+        return [2, -1, 77]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * 0.009;
     })
 
     return (
@@ -410,6 +437,7 @@ export default function App(props) {
                             <MobileBox2 />
                             <MobileBox3 />
                             <MobileBox4 />
+                            <MobileBox5 />
                         </Suspense>
                         <MyCamera />
                     </Canvas >
