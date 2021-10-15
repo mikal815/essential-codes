@@ -339,6 +339,9 @@ h2, h3 {
   resize: none;
   justify-self: center;
   text-align: center;
+
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 .btn {
