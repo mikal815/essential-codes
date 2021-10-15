@@ -47,10 +47,11 @@ h2, h3 {
     line-height: 1;
   }
 
-  .tag-line {
+  .tag-line-mobile {
+    grid-column: 1 / 12;
     color: black;
     background-color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     display: inline;
     line-height: 1.25;
   }
@@ -82,7 +83,7 @@ h2, h3 {
   .blockquote {
     font-family: "Orbitron Light",sans-serif;
     font-weight: 900;
-    grid-column: 2 / span 11;
+    grid-column: 2 / span 12;
     margin-bottom: var(--spacing);
   }
 
@@ -118,12 +119,21 @@ h2, h3 {
     justify-self: center;
   }
 
-  .left {
+  .contact-mobile {
     display: grid;
-    grid-column: 6 / 12;
+    grid-column: span 12 / auto;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding: 2rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    place-content: center;
+    
   }
 
-  .left h2 {
+  .contact-mobile h2 {
     font-family: "Orbitron Light", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -307,21 +317,25 @@ h2, h3 {
 }
 
 .input {
-  width: 500px;
+  width: 300px;
   height: 35px;
   margin-bottom: 15px;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
+  justify-self: center;
+  text-align: center;
 }
 
 .textarea {
-  width: 500px;
+  width: 300px;
   height: 150px;
   margin-bottom: 15px;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
   padding-top: 7px;
   resize: none;
+  justify-self: center;
+  text-align: center;
 }
 
 .btn {
