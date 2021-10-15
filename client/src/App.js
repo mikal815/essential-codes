@@ -368,7 +368,7 @@ const MobileBox4 = () => {
 const MobileBox5 = () => {
 
     const position = useMemo(() => {
-        return [2, -1, 77]
+        return [0, -1, 78]
     }, [])
 
     const mesh = useRef();

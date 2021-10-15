@@ -262,12 +262,12 @@ export default function Content() {
                 </form>
             </div>
 
-            <footer>
+            <div className="footer-mobile">
                 <Link smooth to="#top-link">Top</Link>
                 <Link smooth to="#about-link">About</Link>
                 <Link smooth to="#services-link">Services</Link>
                 <Link smooth to="#projects-link">Projects</Link>
-            </footer>
+            </div>
         </div>
     )
 }
