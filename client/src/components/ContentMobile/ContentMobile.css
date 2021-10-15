@@ -188,7 +188,7 @@ h2, h3 {
     display: grid;
     background-color: rgba(15, 15, 15, 0.9);
     justify-items: center;
-    padding-bottom: 23rem;
+    padding-bottom: 21rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 10px;
@@ -198,7 +198,7 @@ h2, h3 {
   display: grid;
   background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 10px;
@@ -208,7 +208,7 @@ h2, h3 {
   display: grid;
   background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
-  padding-bottom: 16rem;
+  padding-bottom: 13rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 10px;
@@ -218,7 +218,7 @@ h2, h3 {
   display: grid;
   background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
-  padding-bottom: 18rem;
+  padding-bottom: 14.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 10px;
@@ -228,7 +228,7 @@ h2, h3 {
   display: grid;
   background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 10px;
@@ -238,7 +238,7 @@ h2, h3 {
   display: grid;
   background-color: rgba(15, 15, 15, 0.9);
   justify-items: center;
-  padding-bottom: 270px;
+  padding-bottom: 14rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 10px;
@@ -278,7 +278,7 @@ h2, h3 {
 
 .caption-mobile {
   height: 120px;
-  font-size: 19px;
+  font-size: 0.8em;
 }
 
 .inner-title-mobile {
@@ -286,6 +286,7 @@ h2, h3 {
   padding-bottom: 35px;
   font-family: "dominik.regular", sans-serif;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .git-link-container {
