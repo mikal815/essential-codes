@@ -258,7 +258,7 @@ const Box7 = () => {
 const MobileBox = () => {
 
     const position = useMemo(() => {
-        return [0, 0, -3.2]
+        return [0, 0, -3]
     }, [])
 
     const mesh = useRef();
