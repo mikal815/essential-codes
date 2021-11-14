@@ -6,6 +6,7 @@ import stone from '../src/assets/images/stone.jpg'
 import { random } from 'lodash'
 import Content from './components/Content'
 import ContentMobile from './components/ContentMobile'
+import ContentTablet from './components/ContentTablet'
 import MediaQuery from 'react-responsive';
 
 
@@ -266,10 +267,6 @@ const MobileBox = () => {
     const [boxTexture] = useTexture([stone]);
 
     useFrame(() => {
-        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
-        // mesh.current.rotation.y = document.body.getBoundingClientRect().top * .00025;
-        // mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.004;
-
         mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
         mesh.current.rotation.x = document.body.getBoundingClientRect().top * .002;
     })
@@ -392,6 +389,165 @@ const MobileBox5 = () => {
     )
 }
 
+const TabletBox = () => {
+
+    const position = useMemo(() => {
+        return [0.5, 0, -2]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .002;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        >
+            <boxGeometry args={[1, 1, 3]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const TabletBox2 = () => {
+
+    const position = useMemo(() => {
+        return [-1, -1, 10]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .001;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        >
+            <boxGeometry args={[1, 1, 3]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const TabletBox3 = () => {
+
+    const position = useMemo(() => {
+        return [1, -1, 20]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .003;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        >
+            <boxGeometry args={[1, 1, 3]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const TabletBox4 = () => {
+
+    const position = useMemo(() => {
+        return [-1, -1, 65]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * 0.009;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        >
+            <boxGeometry args={[1, 1, 3]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const TabletBox5 = () => {
+
+    const position = useMemo(() => {
+        return [0, -1, 78]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * 0.009;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        >
+            <boxGeometry args={[1, 1, 3]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
+const TabletBox6 = () => {
+
+    const position = useMemo(() => {
+        return [0, -2, 58]
+    }, [])
+
+    const mesh = useRef();
+
+    const [boxTexture] = useTexture([stone]);
+
+    useFrame(() => {
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * -.001;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * 0.01;
+    })
+
+    return (
+        <mesh
+            position={position}
+            ref={mesh}
+        >
+            <boxGeometry args={[1, 1, 3]} />
+            <meshStandardMaterial attach="material" map={boxTexture} />
+        </mesh >
+    )
+}
+
 
 
 const MyCamera = () => {
@@ -452,17 +608,17 @@ export default function App(props) {
                         <ambientLight intensity={1.00} color={0xffffff} />
                         <pointLight position={[5, 5, 5]} color={0xffffff} />
                         <Suspense fallback={null}>
-                            <Box1 />
-                            <Box2 />
-                            <Box3 />
-                            <Box4 />
-                            <Box5 />
-                            <Box6 />
-                            <Box7 />
+                            <TabletBox />
+                            <TabletBox2 />
+                            <TabletBox3 />
+                            <TabletBox4 />
+                            <TabletBox5 />
+                            <TabletBox6 />
                         </Suspense>
                         <MyCamera />
                     </Canvas >
-                    <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
+                    <ContentTablet onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
+                    <div className="img" role="img"></div>
                 </div>
             </MediaQuery>
         </>

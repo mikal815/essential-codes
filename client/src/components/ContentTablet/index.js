@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './ContentMobile.css'
+import './ContentTablet.css'
 import BPS from '../../assets/images/BPS.PNG';
 import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
@@ -66,10 +66,10 @@ export default function Content() {
     }
 
     return (
-        // <div className="main content-mobile" id="top-link">
-        <div className="content-mobile" id="top-link">
+        // <div className="main content-tablet" id="top-link">
+        <div className="content-tablet" id="top-link">
 
-            <div className="header-mobile">
+            <div className="header-tablet">
                 <h1>MIKE MENSINGER</h1>
                 <p>Software Developer</p>
             </div>
@@ -78,7 +78,7 @@ export default function Content() {
                 <p>'Putting the pieces together for you and your business'-</p>
             </div>
 
-            <div className="about-mobile" id="about-link">
+            <div className="about" id="about-link">
                 <h2>About</h2>
                 <p>
                     Software developer building good looking functional websites and apps while
@@ -91,11 +91,11 @@ export default function Content() {
                 </p>
             </div>
 
-            <div className="services-mobile" id="services-link">
+            <div className="services-tablet" id="services-link">
                 <h2 id="services">Services</h2>
                 <div className="services-item-container">
                     <div className="services-item">
-                        <div className="services-inner-title-mobile">FRONTEND</div>
+                        <div className="services-inner-title-tablet">FRONTEND</div>
                         <div>HTML5</div>
                         <div>CSS3/Sass</div>
                         <div>Javascript(ES6)</div>
@@ -105,7 +105,7 @@ export default function Content() {
                         <div>Photoshop</div>
                     </div>
                     <div className="services-item">
-                        <div className="services-inner-title-mobile">SERVER</div>
+                        <div className="services-inner-title-tablet">SERVER</div>
                         <div className="services-sub-section">
                             <div>Node.js</div>
                             <div>Express</div>
@@ -117,7 +117,7 @@ export default function Content() {
                         </div>
                     </div>
                     <div className="services-item">
-                        <div className="services-inner-title-mobile">DATABASE</div>
+                        <div className="services-inner-title-tablet">DATABASE</div>
                         <div className="services-sub-section">
                             <div>MongoDB</div>
                             <div>MySQL</div>
@@ -127,7 +127,7 @@ export default function Content() {
                         </div>
                     </div>
                     <div className="services-item">
-                        <div className="services-inner-title-mobile">ADDITIONAL</div>
+                        <div className="services-inner-title-tablet">ADDITIONAL</div>
                         <div className="services-sub-section">
                             <div>Debugging</div>
                             <div>Testing/Error handling</div>
@@ -142,18 +142,18 @@ export default function Content() {
                 </div>
             </div>
 
-            <div className="portfolio-mobile" id="projects-link">
-                <div className="portfolio-container-mobile">
-                    <div className="project-mobile-sd">
-                        <h2 id="portfolio-title-mobile">Projects</h2>
-                        <div className="inner-title-mobile">SURFER DEPOT</div>
+            <div className="portfolio-tablet" id="projects-link">
+                <div className="portfolio-container-tablet">
+                    <div className="project-tablet-sd">
+                        <h2 id="portfolio-title-tablet">Projects</h2>
+                        <div className="inner-title-tablet">SURFER DEPOT</div>
                         <a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                             <img src={SurferDepot} alt="Surfer Depot" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/surfer-depot" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption-mobile">
+                        <div className="caption-tablet">
                             Full stack e-commerce web app. Front-end tech used:
                             React, Redux, Material-UI, Bootstrap, HTML5, CSS3.
                             Back-end tech used: MongoDB, Node.js, and Express.
@@ -167,28 +167,28 @@ export default function Content() {
                         </div>
                     </div>
 
-                    <div className="project-mobile-it">
-                        <div className="inner-title-mobile">ICARUS TRAVEL</div>
+                    <div className="project-tablet-it">
+                        <div className="inner-title-tablet">ICARUS TRAVEL</div>
                         <a href="https://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={Icarus} alt="Icarus" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/icarus" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption-mobile">
+                        <div className="caption-tablet">
                             Website built with HTML5, CSS, and Bootstrap.  Features scrolling image carousels and various animations.
                         </div>
                     </div>
 
-                    <div className="project-mobile-ss">
-                        <div className="inner-title-mobile">SHAPE SHIFTER</div>
+                    <div className="project-tablet-ss">
+                        <div className="inner-title-tablet">SHAPE SHIFTER</div>
                         <a href="https://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={Shapes} alt="Shape Shifter" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/clicky-game" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption-mobile">
+                        <div className="caption-tablet">
                             Memory game build with React. Goal is to click each shape
                             without clicking the same shape twice. Images are randomly repositioned
                             after every click increasing difficulty. 12 shapes in total; once your score
@@ -197,15 +197,15 @@ export default function Content() {
                         </div>
                     </div>
 
-                    <div className="project-mobile-bps">
-                        <div className="inner-title-mobile">BOARDWALK PIER STAGE</div>
+                    <div className="project-tablet-bps">
+                        <div className="inner-title-tablet">BOARDWALK PIER STAGE</div>
                         <a href="https://bps-site.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={BPS} alt="Boardwalk Pier Stage" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/the-event" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption-mobile">
+                        <div className="caption-tablet">
                             Featuring React on the frontend as well as a countdown clock which displays the amount of
                             days, hours, minutes and seconds until the event. Other features include a carousel and a side menu drawer.
                             After clicking a link the user is vertically scrolled directly to the appropriate content.
@@ -214,28 +214,28 @@ export default function Content() {
                         </div>
                     </div>
 
-                    <div className="project-mobile-ochs">
-                        <div className="inner-title-mobile">OCHS BASEBALL</div>
+                    <div className="project-tablet-ochs">
+                        <div className="inner-title-tablet">OCHS BASEBALL</div>
                         <a href="https://ochs-baseball.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={OCHS} alt="OCHS Baseball" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/ochs" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption-mobile">
+                        <div className="caption-tablet">
                             Featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid.
                     </div>
                     </div>
 
-                    <div className="project-mobile-mtme">
-                        <div className="inner-title-mobile">MUSIC TO MY EARS</div>
+                    <div className="project-tablet-mtme">
+                        <div className="inner-title-tablet">MUSIC TO MY EARS</div>
                         <a href="https://music-to-my-ears-1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                             <img src={MTME} alt="Music to My Ears" />
                         </a>
                         <div className="git-link-container">
                             <a href="https://github.com/mikal815/ear-trainer" className="git-link">VIEW CODE</a>
                         </div>
-                        <div className="caption-mobile">
+                        <div className="caption-tablet">
                             Ear training app for musicians using intervals.
                             The app runs a sequence of two notes consecutively
                             and the user must mimic the same sequence using only their ears as a guide. The key
@@ -249,10 +249,10 @@ export default function Content() {
             </div>
 
             <div className="blockquote">
-                <div className="tag-line-mobile">'Programming the future!'-<br></br></div>
+                <div className="tag-line-tablet">'Programming the future!'-<br></br></div>
             </div>
 
-            <div className="contact-mobile">
+            <div className="contact-tablet">
                 <h2>Contact</h2>
                 <form className="form" onSubmit={handleSubmit}>
                     <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
@@ -262,7 +262,7 @@ export default function Content() {
                 </form>
             </div>
 
-            <div className="footer-mobile">
+            <div className="footer-tablet">
                 <Link smooth to="#top-link">Top</Link>
                 <Link smooth to="#about-link">About</Link>
                 <Link smooth to="#services-link">Services</Link>
