@@ -26,7 +26,7 @@ const Box = ({ color, ...props }) => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[0.2, 0.2, 1]} />
+            <boxGeometry args={[0.125, 0.125, 1.4]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
