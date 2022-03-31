@@ -26,7 +26,7 @@ const Box = ({ color, ...props }) => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[0.125, 0.125, 1.4]} />
+            <boxGeometry args={[0.12, 0.12, 1.4]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
@@ -54,7 +54,7 @@ const Boxes = () => {
 const Box1 = () => {
 
     const position = useMemo(() => {
-        return [1, 1, -5]
+        return [0.25, 0.5, -5]
     }, [])
 
     const mesh = useRef();
@@ -74,7 +74,7 @@ const Box1 = () => {
         // rotation-x={0.1}
         // rotateX={10}
         >
-            <boxGeometry args={[3, 3, 7.5]} />
+            <boxGeometry args={[2.75, 2.75, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
