@@ -97,10 +97,9 @@ export default function Content() {
                     <div className="services-item">
                         <div className="services-inner-title">FRONTEND</div>
                         <div>HTML5</div>
-                        <div>CSS3/Sass</div>
-                        <div>Javascript(ES6)</div>
+                        <div>CSS3</div>
+                        <div>Javascript ( ES6 )</div>
                         <div>React</div>
-                        <div>Redux</div>
                         <div>Responsive Design</div>
                         <div>Photoshop</div>
                     </div>
@@ -112,7 +111,6 @@ export default function Content() {
                             <div>RESTful Web Services</div>
                             <div>Email Services</div>
                             <div>Payment systems</div>
-                            <div>Caching</div>
                             <div>Configuration</div>
                         </div>
                     </div>
@@ -123,16 +121,14 @@ export default function Content() {
                             <div>MySQL</div>
                             <div>Password hashing</div>
                             <div>Authentication</div>
-                            <div>Authorization</div>
                         </div>
                     </div>
                     <div className="services-item">
                         <div className="services-inner-title">ADDITIONAL</div>
                         <div className="services-sub-section">
                             <div>Debugging</div>
-                            <div>Testing/Error handling</div>
+                            <div>Testing / Error handling</div>
                             <div>Tech integration</div>
-                            <div>Scaling</div>
                             <div>Project Architecture</div>
                             <div>Data Scraping</div>
                             <div>Version Control</div>
@@ -164,7 +160,7 @@ export default function Content() {
                             Admin view allows the administrator to add new products onto
                             the
                             site. Users must pass authentication to access the admin area.
-                    </div>
+                        </div>
                     </div>
 
                     <div className="project">
@@ -224,7 +220,7 @@ export default function Content() {
                         </div>
                         <div className="caption">
                             Featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid.
-                    </div>
+                        </div>
                     </div>
 
                     <div className="project">
@@ -243,7 +239,7 @@ export default function Content() {
                             Built using React on the frontend and Node.js, Express,
                             and MongoDB (save score) on the backend. Also features a login system using
                             Passport.js.
-                    </div>
+                        </div>
                     </div>
 
                 </div>
