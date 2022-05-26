@@ -68,7 +68,12 @@ export default function Content() {
     return (
 
         <div className="content-laptop" id="top-link">
-
+            <div className='navigation'>
+                <div>Services</div>
+                <div>Services</div>
+                <div>Services</div>
+                <div>Services</div>
+            </div>
             <header>
                 <h1>MIKE MENSINGER</h1>
                 <p>Software Developer</p>

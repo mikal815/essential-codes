@@ -3,52 +3,10 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { useTexture } from '@react-three/drei';
 import './App.css';
 import stone from '../src/assets/images/stone.jpg'
-import { random } from 'lodash'
 import Content from './components/Content'
 import ContentMobile from './components/ContentMobile'
 import ContentTablet from './components/ContentTablet'
 import MediaQuery from 'react-responsive';
-
-
-const Box = ({ color, ...props }) => {
-
-    const position = useMemo(() => {
-        return [random(-1, 1, true), random(-1, 1, true), random(-120, 120, true)]
-    }, [])
-
-    const mesh = useRef();
-
-    const [boxTexture] = useTexture([stone]);
-
-    return (
-        <mesh
-            {...props}
-            position={position}
-            ref={mesh}
-        >
-            <boxGeometry args={[0.12, 0.12, 1.4]} />
-            <meshStandardMaterial attach="material" map={boxTexture} />
-        </mesh >
-    )
-}
-
-
-const Boxes = () => {
-
-    const NUM = 120;
-    const spheres = new Array(NUM).fill()
-    return (
-        <>
-            {spheres.map((_, i) => {
-                return (
-                    <group>
-                        <Box key={i} color="#fff" />
-                    </group>
-                )
-            })}
-        </>
-    )
-}
 
 
 const Box1 = () => {
@@ -64,7 +22,6 @@ const Box1 = () => {
     useFrame(() => {
         mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
         mesh.current.rotation.x = document.body.getBoundingClientRect().top * .002;
-        // mesh.current.rotation.y = document.body.getBoundingClientRect().top * -.002;
     })
 
     return (
@@ -597,7 +554,7 @@ export default function App(props) {
                         </Suspense>
                         <MyCamera />
                     </Canvas >
-                    <ContentMobile onScroll={() => { MyCamera(); Boxes(); }} />
+                    <ContentMobile onScroll={() => { MyCamera(); }} />
                     <div className="img" role="img"></div>
                 </div>
             </MediaQuery>
