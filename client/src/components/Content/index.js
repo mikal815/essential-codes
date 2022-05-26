@@ -69,10 +69,10 @@ export default function Content() {
 
         <div className="content-laptop" id="top-link">
             <div className='navigation'>
-                <Link smooth to="#services-link">Services</Link>
-                <Link smooth to="#about-link">About</Link>
-                <Link smooth to="#projects-link">Projects</Link>
-                <Link smooth to="#hire" className='hire'>Hire Me</Link>
+                <div><Link smooth to="#services-link" className='navi-link'>Services</Link></div>
+                <div><Link smooth to="#about-link" className='navi-link'>About</Link></div>
+                <div><Link smooth to="#projects-link" className='navi-link'>Projects</Link></div>
+                <div><Link smooth to="#hire" className='hire'>Hire Me</Link></div>
             </div>
 
             <header>
