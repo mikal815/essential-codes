@@ -66,8 +66,13 @@ export default function Content() {
     }
 
     return (
-        // <div className="main content-tablet" id="top-link">
         <div className="content-tablet" id="top-link">
+            <div className='navigation-tablet'>
+                <div><Link smooth to="#services-link" className='navi-link-tablet'>Services</Link></div>
+                <div><Link smooth to="#about-link" className='navi-link-tablet'>About</Link></div>
+                <div><Link smooth to="#projects-link" className='navi-link-tablet'>Projects</Link></div>
+                <div><Link smooth to="#hire" className='hire-tablet'>Hire Me</Link></div>
+            </div>
 
             <div className="header-tablet">
                 <h1>MIKE MENSINGER</h1>
@@ -224,7 +229,7 @@ export default function Content() {
                         </div>
                         <div className="caption-tablet">
                             Featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid.
-                    </div>
+                        </div>
                     </div>
 
                     <div className="project-tablet-mtme">
@@ -243,7 +248,7 @@ export default function Content() {
                             Built using React on the frontend and Node.js, Express,
                             and MongoDB (save score) on the backend. Also features a login system using
                             Passport.js.
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,7 +257,7 @@ export default function Content() {
                 <div className="tag-line-tablet">'Programming the future!'-<br></br></div>
             </div>
 
-            <div className="contact-tablet">
+            <div className="contact-tablet" id="hire">
                 <h2>Contact</h2>
                 <form className="form" onSubmit={handleSubmit}>
                     <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>

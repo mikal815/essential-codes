@@ -12,6 +12,43 @@
     overflow-x: hidden;
   }
 
+  .navigation-tablet {
+    display: grid;
+    grid-column: 3 / span 8;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 190px;
+    background: var(--dark-bg);
+    padding-top: 25px;
+  }
+  
+  .navigation-tablet .navi-link {
+    text-decoration: none;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    letter-spacing: 1.2px;
+  }
+  
+  .navigation-tablet .hire {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    letter-spacing: 1.2px;
+  }
+  
+  .navigation-tablet div {
+    display: grid;
+    justify-self: center;
+    font-size: 1.1rem;
+    font-weight: bold;  
+  }
+
 .header-tablet h1 {
   font-size: 3em;
   margin-top: 0;
