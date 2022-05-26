@@ -70,10 +70,11 @@ export default function Content() {
         <div className="content-laptop" id="top-link">
             <div className='navigation'>
                 <div>Services</div>
-                <div>Services</div>
-                <div>Services</div>
-                <div>Services</div>
+                <div>About</div>
+                <div>Projects</div>
+                <div>Hire Me</div>
             </div>
+
             <header>
                 <h1>MIKE MENSINGER</h1>
                 <p>Software Developer</p>
@@ -255,7 +256,7 @@ export default function Content() {
             </blockquote>
 
             <section className="left">
-                <h2>Contact</h2>
+                <h2>Hire Me</h2>
                 <form className="form span-row-2" onSubmit={handleSubmit}>
                     <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
                     <input className="input" id="email" placeholder="Email" type="email" value={email} onChange={handleChange}></input><br></br>

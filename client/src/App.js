@@ -12,7 +12,7 @@ import MediaQuery from 'react-responsive';
 const Box1 = () => {
 
     const position = useMemo(() => {
-        return [0.25, 0.5, -5]
+        return [0, 0, -4]
     }, [])
 
     const mesh = useRef();
@@ -28,10 +28,8 @@ const Box1 = () => {
         <mesh
             position={position}
             ref={mesh}
-        // rotation-x={0.1}
-        // rotateX={10}
         >
-            <boxGeometry args={[2.75, 2.75, 7.5]} />
+            <boxGeometry args={[1.8, 1.8, 4.8]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
@@ -58,8 +56,6 @@ const Box2 = () => {
         <mesh
             position={position}
             ref={mesh}
-        // rotation-x={0.1}
-        // rotateX={10}
         >
             <boxGeometry args={[3, 3, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
@@ -88,8 +84,6 @@ const Box3 = () => {
         <mesh
             position={position}
             ref={mesh}
-        // rotation-x={0.1}
-        // rotateX={10}
         >
             <boxGeometry args={[3, 3, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
@@ -117,8 +111,6 @@ const Box4 = () => {
         <mesh
             position={position}
             ref={mesh}
-        // rotation-x={0.1}
-        // rotateX={10}
         >
             <boxGeometry args={[3, 3, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
@@ -146,8 +138,6 @@ const Box5 = () => {
         <mesh
             position={position}
             ref={mesh}
-        // rotation-x={0.1}
-        // rotateX={10}
         >
             <boxGeometry args={[3, 3, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
@@ -175,8 +165,6 @@ const Box6 = () => {
         <mesh
             position={position}
             ref={mesh}
-        // rotation-x={0.1}
-        // rotateX={10}
         >
             <boxGeometry args={[3, 3, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
@@ -204,8 +192,6 @@ const Box7 = () => {
         <mesh
             position={position}
             ref={mesh}
-        // rotation-x={0.1}
-        // rotateX={10}
         >
             <boxGeometry args={[3, 3, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
