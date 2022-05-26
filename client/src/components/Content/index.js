@@ -69,10 +69,10 @@ export default function Content() {
 
         <div className="content-laptop" id="top-link">
             <div className='navigation'>
-                <div>Services</div>
-                <div>About</div>
-                <div>Projects</div>
-                <div>Hire Me</div>
+                <Link smooth to="#services-link">Services</Link>
+                <Link smooth to="#about-link">About</Link>
+                <Link smooth to="#projects-link">Projects</Link>
+                <Link smooth to="#hire" className='hire'>Hire Me</Link>
             </div>
 
             <header>
@@ -255,7 +255,7 @@ export default function Content() {
                 <div className="tag-line">'Programming the future!'-<br></br></div>
             </blockquote>
 
-            <section className="left">
+            <section className="left" id="hire">
                 <h2>Hire Me</h2>
                 <form className="form span-row-2" onSubmit={handleSubmit}>
                     <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
