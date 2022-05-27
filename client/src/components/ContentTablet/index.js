@@ -91,8 +91,7 @@ export default function Content() {
                     product. Complex design and developmet challenges are solved using familiarity
                     with technologies and tools as well as coding abilities, analytical thinking, and creativity.
                     Certified "Full Stack Web Developer" through UPenn LPS coding boot camp &
-                    The New York Code + Design Academy.  I have experience working collaboratively
-                    on programming projects.
+                    The New York Code + Design Academy.
                 </p>
             </div>
 

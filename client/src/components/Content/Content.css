@@ -286,9 +286,9 @@ footer a {
     background: var(--dark-bg);
     grid-column: 2 / span 10;
     font-size: 1.1rem;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    margin-bottom: 65px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 50px;
     justify-content: space-around;
   }
 
