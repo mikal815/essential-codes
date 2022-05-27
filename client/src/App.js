@@ -335,7 +335,7 @@ const MobileBox5 = () => {
 const TabletBox = () => {
 
     const position = useMemo(() => {
-        return [0.5, 0, -2]
+        return [0, 0, -1.5]
     }, [])
 
     const mesh = useRef();
@@ -352,7 +352,7 @@ const TabletBox = () => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[1, 1, 3]} />
+            <boxGeometry args={[0.6, 0.6, 1.75]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
