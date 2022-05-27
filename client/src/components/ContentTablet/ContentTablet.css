@@ -21,7 +21,7 @@
     padding-top: 25px;
   }
   
-  .navigation-tablet .navi-link {
+  .navigation-tablet .navi-link-tablet {
     text-decoration: none;
     color: white;
     padding-top: 8px;
@@ -31,7 +31,7 @@
     letter-spacing: 1.2px;
   }
   
-  .navigation-tablet .hire {
+  .navigation-tablet .hire-tablet {
     text-decoration: none;
     color: black;
     background: white;
@@ -45,12 +45,13 @@
   .navigation-tablet div {
     display: grid;
     justify-self: center;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: bold;  
   }
 
 .header-tablet h1 {
   font-size: 3em;
+  margin-top: 0;
 }
 
 h2, h3 {
@@ -67,7 +68,7 @@ h2, h3 {
     letter-spacing: 10px;
     background: var(--dark-bg);
     font-size: 0.75rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     margin-bottom: 28rem;
     place-content: center;
   }
@@ -357,7 +358,7 @@ h2, h3 {
 }
 
 .input-tablet {
-  width: 300px;
+  width: 500px;
   height: 35px;
   margin-bottom: 15px;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
@@ -370,7 +371,7 @@ h2, h3 {
 }
 
 .textarea-tablet {
-  width: 300px;
+  width: 500px;
   height: 150px;
   margin-bottom: 15px;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
@@ -432,7 +433,7 @@ h2, h3 {
     font-weight: bolder;
     padding-top: 35px;
     padding-bottom: 35px;
-    margin-bottom: var(--spacing);
+    margin-bottom: 0;
     justify-content: space-around;
   }
 
