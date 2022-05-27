@@ -354,7 +354,7 @@ h2, h3 {
   justify-self: center;
 }
 
-.input {
+.input-tablet {
   width: 300px;
   height: 35px;
   margin-bottom: 15px;
@@ -367,7 +367,7 @@ h2, h3 {
   border-radius: 0;
 }
 
-.textarea {
+.textarea-tablet {
   width: 300px;
   height: 150px;
   margin-bottom: 15px;

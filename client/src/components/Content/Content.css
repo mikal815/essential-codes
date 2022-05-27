@@ -133,6 +133,7 @@ h2, h3 {
   font-weight: 900;
   font-style: normal;
   justify-self: center;
+  letter-spacing: 2px;
   }
 
   #id {
@@ -224,6 +225,7 @@ h2, h3 {
 .input {
   width: 500px;
   height: 35px;
+  padding-left: 10px;
   margin-bottom: 15px;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
@@ -236,6 +238,7 @@ h2, h3 {
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
   padding-top: 7px;
+  padding-left: 10px;
   resize: none;
 }
 
@@ -282,10 +285,10 @@ footer a {
     font-weight: bold;
     background: var(--dark-bg);
     grid-column: 2 / span 10;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-top: 35px;
     padding-bottom: 35px;
-    margin-bottom: var(--spacing);
+    margin-bottom: 65px;
     justify-content: space-around;
   }
 

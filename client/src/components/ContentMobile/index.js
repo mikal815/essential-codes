@@ -251,9 +251,9 @@ export default function Content() {
             <div className="contact-mobile">
                 <h2>Contact</h2>
                 <form className="form" onSubmit={handleSubmit}>
-                    <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
-                    <input className="input" id="email" placeholder="Email" type="email" value={email} onChange={handleChange}></input><br></br>
-                    <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
+                    <input className="input-mobile" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
+                    <input className="input-mobile" id="email" placeholder="Email" type="email" value={email} onChange={handleChange}></input><br></br>
+                    <textarea className="textarea-mobile" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
                     <button className="btn span-row-2" onClick={handleSubmit}>Send</button>
                 </form>
             </div>
