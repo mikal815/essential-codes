@@ -35,7 +35,7 @@ canvas {
   --dark-bg: rgba(15, 15, 15, 0.9);
   --spacing: 350px;
   font-size: 18px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.05rem;
   font-family: "Dominik_Thin", sans-serif;
   font-style: normal;
 }
