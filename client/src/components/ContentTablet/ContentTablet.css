@@ -9,6 +9,7 @@
     position: absolute;
     margin: 0px auto;
     padding: 180px 0px;
+    padding-bottom: 20px;
     overflow-x: hidden;
   }
 
@@ -429,7 +430,7 @@ h2, h3 {
     margin-left: 5vw;
     display: flex;
     background: var(--dark-bg);
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: bolder;
     padding-top: 35px;
     padding-bottom: 35px;

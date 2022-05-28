@@ -77,7 +77,7 @@ export default function Content() {
 
             <header>
                 <h1>MIKE MENSINGER</h1>
-                <p>Software Developer</p>
+                <p>Web Developer</p>
             </header>
 
             <blockquote>

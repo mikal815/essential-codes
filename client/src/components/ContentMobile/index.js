@@ -71,7 +71,7 @@ export default function Content() {
 
             <div className="header-mobile">
                 <h1>MIKE MENSINGER</h1>
-                <p>Software Developer</p>
+                <p>Web Developer</p>
             </div>
 
             <div className="blockquote">
