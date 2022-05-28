@@ -113,6 +113,14 @@ h2, h3 {
     padding-right: 5rem;
   }
 
+  #about-link h2 {
+    margin-bottom: 0;
+  }
+
+  #about-link p {
+    font-size: 1.2rem;
+  }
+
   blockquote {
     font-family: 
     "Orbitron Light",
@@ -195,9 +203,9 @@ h2, h3 {
   .project {
     display: grid;
     justify-items: center;
-    padding-bottom: 150px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-bottom: 7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .project img {
@@ -207,7 +215,7 @@ h2, h3 {
 
 .caption {
   height: 120px;
-  font-size: 19px;
+  font-size: 1rem;
 }
 
 .inner-title {
