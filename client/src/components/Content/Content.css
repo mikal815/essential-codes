@@ -122,9 +122,8 @@ h2, h3 {
   }
 
   blockquote {
-    font-family: 
-    "Orbitron Light",
-     sans-serif;
+    font-family: "Orbitron Light",sans-serif;
+    letter-spacing: 0.2rem;
     font-weight: 900;
     grid-column: 2 / span 9;
     margin-bottom: var(--spacing);
@@ -214,6 +213,7 @@ h2, h3 {
 }
 
 .caption {
+  text-indent: 2.1rem;
   height: 120px;
   font-size: 1rem;
 }
