@@ -8,7 +8,7 @@ import ContentMobile from './components/ContentMobile'
 import ContentTablet from './components/ContentTablet'
 import MediaQuery from 'react-responsive';
 
-
+// 3D BOXES ON LAPTOP ////////////////////////////////////////////////////////////////////////////////
 const Box1 = () => {
 
     const position = useMemo(() => {
@@ -199,6 +199,7 @@ const Box7 = () => {
     )
 }
 
+// 3D BOXES ON MOBILE ////////////////////////////////////////////////////////////////////////////////
 const MobileBox = () => {
 
     const position = useMemo(() => {
@@ -332,6 +333,8 @@ const MobileBox5 = () => {
     )
 }
 
+
+// 3D BOXES ON TABLET ////////////////////////////////////////////////////////////////////////////////
 const TabletBox = () => {
 
     const position = useMemo(() => {
@@ -492,7 +495,7 @@ const TabletBox6 = () => {
 }
 
 
-
+// MOVE CAMERA ON Z AXIS / THIS FUNCTION RUNS WHEN CONTENT IS SCROLLED////////////////////////////////////////
 const MyCamera = () => {
     useFrame(({ camera }) => {
         camera.position.z = document.body.getBoundingClientRect().top * -0.009;

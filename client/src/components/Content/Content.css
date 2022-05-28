@@ -20,6 +20,7 @@
 
 .navigation .navi-link {
   text-decoration: none;
+  font-family: "Dominik_Thin";
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -30,6 +31,7 @@
 
 .navigation .hire {
   text-decoration: none;
+  font-family: "Dominik_Thin";
   color: black;
   background: white;
   padding-top: 8px;
@@ -106,6 +108,11 @@ h2, h3 {
     margin-bottom: var(--spacing);
   }
 
+  #about-link {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   blockquote {
     font-family: 
     "Orbitron Light",
@@ -148,6 +155,11 @@ h2, h3 {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    font-family: "dominik.regular";
+  }
+
+  .services-item div {
+    font-family: "Dominik_Thin", sans-serif;
   }
 
   .services-item-container {
