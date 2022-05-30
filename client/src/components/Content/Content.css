@@ -15,18 +15,18 @@
   grid-template-columns: repeat(4, 1fr);
   margin-top: 12.2rem;
   background: var(--dark-bg);
-  padding-top: 25px;
+  padding-top: 1.7rem;
 }
 
 .navigation .navi-link {
   text-decoration: none;
   font-family: "Dominik_Thin";
   color: white;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 14px;
-  padding-right: 14px;
-  letter-spacing: 1.2px;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  letter-spacing: 0.13rem;
 }
 
 .navigation .hire {
@@ -34,11 +34,11 @@
   font-family: "Dominik_Thin";
   color: black;
   background: white;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 14px;
-  padding-right: 14px;
-  letter-spacing: 1.2px;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  letter-spacing: 0.13rem;
 }
 
 .navigation div {
@@ -48,10 +48,8 @@
   font-weight: bold;  
 }
 
-
-
 header h1 {
-  margin-top: -5px;
+  margin-top: -0.3rem;
   margin-bottom: 0;
   justify-self: center;
 }
@@ -65,7 +63,7 @@ h2, h3 {
   header {
     display: grid;
     font-family: "Orbitron Light", sans-serif;
-    letter-spacing: 10px;
+    letter-spacing: 0.8rem;
     background: var(--dark-bg);
     grid-column: 3 / span 8;
     font-size: 1.75rem;
@@ -148,7 +146,7 @@ h2, h3 {
   font-weight: 900;
   font-style: normal;
   justify-self: center;
-  letter-spacing: 2px;
+  letter-spacing: 0.13rem;
   }
 
   #id {
@@ -161,8 +159,6 @@ h2, h3 {
 
   .services-item {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
     font-family: "dominik.regular";
   }
 
@@ -176,7 +172,7 @@ h2, h3 {
   }
 
   .services-inner-title {
-    padding-bottom: 10px;
+    padding-bottom: 0.8rem;
     font-family: "dominik.regular", sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
@@ -197,7 +193,6 @@ h2, h3 {
   .portfolio-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 45px;
   }
 
   .project {
@@ -209,25 +204,26 @@ h2, h3 {
 }
 
 .project img {
-    height: 300px;
-    padding-bottom: 20px;
+    height: 16rem;
+    padding-bottom: 2rem;
 }
 
 .caption {
   text-indent: 2.1rem;
-  height: 120px;
+  height: 8rem;
+  width: 25rem;
   font-size: 1rem;
 }
 
 .inner-title {
-  padding-top: 75px;
-  padding-bottom: 35px;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
   font-family: "dominik.regular", sans-serif;
   font-size: 1.5rem;
 }
 
 .git-link-container {
-  padding-bottom: 15px;
+  padding-bottom: 3rem;
 }
 
 .git-link {
@@ -235,7 +231,6 @@ h2, h3 {
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   text-decoration: none;
   text-align: center;
-  font-size: 19px;
 }
 
 .form {
@@ -244,33 +239,30 @@ h2, h3 {
 }
 
 .input {
-  width: 500px;
-  height: 35px;
-  padding-left: 10px;
-  margin-bottom: 15px;
+  width: 31rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
 }
 
 .textarea {
-  width: 500px;
-  height: 150px;
-  margin-bottom: 15px;
+  width: 31rem;
+  height: 11rem;
+  margin-bottom: 1rem;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
-  padding-top: 7px;
-  padding-left: 10px;
+  padding-top: 1rem;
+  padding-left: 1rem;
   resize: none;
 }
 
 .btn {
-  margin-bottom: 15px;
-  width: 220px;
-  height: 38px;
+  margin-bottom: 1rem;
   text-decoration: none;
   color: #ffffff;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-  font-size: 14px;
   background-color: #696969;
   border: none;
   justify-self: center;
@@ -283,7 +275,7 @@ footer a {
 }
 
   ::-webkit-scrollbar {
-    width: 15px;
+    width: 1rem;
   } 
   
   /* Track */
@@ -307,9 +299,9 @@ footer a {
     background: var(--dark-bg);
     grid-column: 2 / span 10;
     font-size: 1.1rem;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    margin-bottom: 8px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
     justify-content: space-around;
   }
 
