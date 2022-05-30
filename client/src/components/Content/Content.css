@@ -13,7 +13,7 @@
   display: grid;
   grid-column: 3 / span 8;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 190px;
+  margin-top: 12.2rem;
   background: var(--dark-bg);
   padding-top: 25px;
 }
@@ -96,6 +96,7 @@ h2, h3 {
     font-size: 3rem;
     display: inline;
     line-height: 1.25;
+    letter-spacing: 0.2rem;
   }
 
   section {
