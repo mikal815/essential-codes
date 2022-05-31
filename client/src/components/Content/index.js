@@ -68,14 +68,15 @@ export default function Content() {
     return (
 
         <div className="content-laptop" id="top-link">
-            <div className='navigation'>
-                <div><Link smooth to="#services-link" className='navi-link'>Services</Link></div>
-                <div><Link smooth to="#about-link" className='navi-link'>About</Link></div>
-                <div><Link smooth to="#projects-link" className='navi-link'>Projects</Link></div>
-                <div><Link smooth to="#hire" className='hire'>Hire Me</Link></div>
-            </div>
 
             <header>
+                <div className='navigation'>
+                    <div><Link smooth to="#services-link" className='navi-link'>Services</Link></div>
+                    <div><Link smooth to="#about-link" className='navi-link'>About</Link></div>
+                    <div><Link smooth to="#projects-link" className='navi-link'>Projects</Link></div>
+                    <div><Link smooth to="#hire" className='hire'>Hire Me</Link></div>
+                </div>
+
                 <h1>MIKE MENSINGER</h1>
                 <p>Web Developer</p>
             </header>
@@ -143,7 +144,7 @@ export default function Content() {
                 </div>
             </section>
 
-            <section className="portfolio" id="projects-link">
+            <div className="portfolio" id="projects-link">
                 <h2 id="portfolio-title">Projects</h2>
                 <div className="portfolio-container">
                     <div className="project">
@@ -248,7 +249,7 @@ export default function Content() {
                     </div>
 
                 </div>
-            </section>
+            </div>
 
             <blockquote>
                 <div className="tag-line">'Programming the future!'-<br></br></div>

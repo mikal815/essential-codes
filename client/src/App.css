@@ -27,7 +27,7 @@ canvas {
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.9);
-  --spacing: 350px;
+  /* --spacing: 350px; */
   font-size: 1rem;
   letter-spacing: 0.03rem;
   font-family: Arial, Helvetica, sans-serif;
