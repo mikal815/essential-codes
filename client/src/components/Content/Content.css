@@ -11,11 +11,11 @@ header {
   display: grid;
   font-family: "Orbitron Light", sans-serif;
   letter-spacing: 0.8rem;
-  background: var(--dark-bg);
-  grid-column: span 12 /auto;
-  margin-left: 17%;
-  margin-right: 17%;
-  margin-top: 12.3rem;
+  /* background: var(--dark-bg); */
+  grid-column: span 12 / auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 14rem;
   font-size: 1.75rem;
   padding-top: 1.5rem;
   padding-left: 2.5rem;

@@ -29,7 +29,8 @@ const Box1 = () => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[1.8, 1.8, 4.8]} />
+            {/* <boxGeometry args={[1.8, 1.8, 4.8]} /> */}
+            <boxGeometry args={[2.5, 2, 5.4]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
