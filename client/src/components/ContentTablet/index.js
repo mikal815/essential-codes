@@ -83,7 +83,7 @@ export default function Content() {
                 <p>'Putting the pieces together for you and your business'-</p>
             </div>
 
-            <div className="about" id="about-link">
+            <div className="about-tablet" id="about-link">
                 <h2>About</h2>
                 <p>
                     Software developer building good looking functional websites and apps while

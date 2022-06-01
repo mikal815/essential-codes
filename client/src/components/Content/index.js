@@ -85,7 +85,7 @@ export default function Content() {
                 <p>'Putting the pieces together for you and your business'-</p>
             </blockquote>
 
-            <section id="about-link">
+            <div className="about" id="about-link">
                 <h2>About</h2>
                 <p>
                     Software developer building good looking functional websites and apps while
@@ -95,7 +95,7 @@ export default function Content() {
                     Certified "Full Stack Web Developer" through UPenn LPS coding boot camp &
                     The New York Code + Design Academy.
                 </p>
-            </section>
+            </div>
 
             <section className="left" id="services-link">
                 <h2 id="services">Services</h2>

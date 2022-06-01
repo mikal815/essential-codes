@@ -99,7 +99,7 @@ h2, h3 {
     line-height: 1.25;
   }
 
-  .about {
+  .about-tablet {
     display: grid;
     grid-column: 1 /span 7;
     /* grid-column: span 12 / auto; */
@@ -115,7 +115,7 @@ h2, h3 {
     margin-bottom: var(--spacing);
   }
 
-  .about h2 {
+  .about-tablet h2 {
     font-family: "Orbitron Light", sans-serif;
     font-weight: 900;
     font-style: normal;
