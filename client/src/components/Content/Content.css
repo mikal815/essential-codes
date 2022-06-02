@@ -311,7 +311,7 @@ footer a {
 footer {
   display: flex;
   font-weight: bold;
-  background: var(--dark-bg);
+  background: rgba(15, 15, 15, 0.685);
   grid-column: 2 / span 10;
   font-size: 1.1rem;
   padding-top: 1.5rem;
