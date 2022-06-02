@@ -78,7 +78,7 @@ export default function Content() {
                 </div>
 
                 <h1>MIKE MENSINGER</h1>
-                <p>Web Developer</p>
+                <div id='prof'>Web Developer</div>
             </header>
 
             <blockquote>

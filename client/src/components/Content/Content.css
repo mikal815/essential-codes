@@ -31,8 +31,17 @@ header h1 {
   grid-column: span 4 /auto;
 }
 
-header p {
+/* header p {
   font-size: 1.5rem;
+  margin-bottom: 0;
+  justify-self: center;
+  grid-column: span 4/ auto;
+  align-items: center;
+} */
+
+#prof {
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
   margin-bottom: 0;
   justify-self: center;
   grid-column: span 4/ auto;
@@ -43,6 +52,7 @@ header p {
   grid-column: span 4 / auto;
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .navigation .navi-link {
@@ -145,6 +155,13 @@ blockquote p {
 
 .services-item div {
   font-family: "Dominik_Thin", sans-serif;
+}
+
+.services-sub-section div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.025rem;
+  letter-spacing: .05rem;
+  line-height: 1.7rem;
 }
 
 .services-item-container {
