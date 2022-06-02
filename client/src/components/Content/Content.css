@@ -85,7 +85,7 @@ blockquote {
 
 blockquote p {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.623);
   font-size: 3rem;
   display: inline;
   line-height: 1.25;
@@ -96,7 +96,7 @@ blockquote p {
   grid-column: 2 / 8;
   /* grid-column: span 12 / auto; */
   padding: 2rem;
-  background: var(--dark-bg);
+  background: rgba(15, 15, 15, 0.685);
   font-size: 1.25rem;
   line-height: 1.5;
   /* margin-bottom: 20rem; */
@@ -142,7 +142,7 @@ section {
   display: grid;
   grid-column: 2 / 8;
   padding: 2rem;
-  background: var(--dark-bg);
+  background: rgba(15, 15, 15, 0.685);
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);

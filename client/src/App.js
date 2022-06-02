@@ -12,7 +12,7 @@ import MediaQuery from 'react-responsive';
 const Box1 = () => {
 
     const position = useMemo(() => {
-        return [0, 0, -4]
+        return [0, 0, -3.3]
     }, [])
 
     const mesh = useRef();
@@ -30,7 +30,7 @@ const Box1 = () => {
             ref={mesh}
         >
             {/* <boxGeometry args={[1.8, 1.8, 4.8]} /> */}
-            <boxGeometry args={[2.5, 2, 5.4]} />
+            <boxGeometry args={[2.5, 1.8, 5.4]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
