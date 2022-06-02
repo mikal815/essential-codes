@@ -99,7 +99,7 @@ blockquote p {
   background: rgba(15, 15, 15, 0.685);
   font-size: 1.25rem;
   line-height: 1.5;
-  /* margin-bottom: 20rem; */
+  margin-bottom: 20rem;
 }
 
 #about-link {
@@ -114,6 +114,51 @@ blockquote p {
 #about-link p {
   font-size: 1.2rem;
 }
+
+.services {
+  display: grid;
+  grid-column: 6 / 12;
+  height: fit-content;
+  padding: 2rem;
+  background: rgba(15, 15, 15, 0.685);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 20rem;
+}
+
+.services h2 {
+  font-family: "Orbitron Light", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  justify-self: center;
+  letter-spacing: 0.13rem;
+}
+
+#services {
+  justify-self: center;
+}
+
+.services-item {
+  text-align: center;
+  font-family: "dominik.regular";
+}
+
+.services-item div {
+  font-family: "Dominik_Thin", sans-serif;
+}
+
+.services-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services-inner-title {
+  padding-bottom: 0.8rem;
+  font-family: "dominik.regular", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 
 h2, h3 {
   font-family: "Orbitron Light", sans-serif;
@@ -145,7 +190,7 @@ section {
   background: rgba(15, 15, 15, 0.685);
   font-size: 1.25rem;
   line-height: 1.5;
-  margin-bottom: var(--spacing);
+  margin-bottom: 20rem;
 }
 
 .left {
@@ -165,30 +210,6 @@ section {
   grid-column: span 2 / auto;
 }
 
-#services {
-  justify-self: center;
-}
-
-.services-item {
-  text-align: center;
-  font-family: "dominik.regular";
-}
-
-.services-item div {
-  font-family: "Dominik_Thin", sans-serif;
-}
-
-.services-item-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.services-inner-title {
-  padding-bottom: 0.8rem;
-  font-family: "dominik.regular", sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
 .portfolio {
   display: grid;

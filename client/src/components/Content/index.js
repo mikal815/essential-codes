@@ -97,7 +97,7 @@ export default function Content() {
                 </p>
             </div>
 
-            <section className="left" id="services-link">
+            <div className="services" id="services-link">
                 <h2 id="services">Services</h2>
                 <div className="services-item-container">
                     <div className="services-item">
@@ -142,7 +142,7 @@ export default function Content() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <div className="portfolio" id="projects-link">
                 <h2 id="portfolio-title">Projects</h2>
