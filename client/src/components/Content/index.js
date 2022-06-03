@@ -102,12 +102,14 @@ export default function Content() {
                 <div className="services-item-container">
                     <div className="services-item">
                         <div className="services-inner-title">FRONTEND</div>
-                        <div>HTML5</div>
-                        <div>CSS3</div>
-                        <div>Javascript ( ES6 )</div>
-                        <div>React</div>
-                        <div>Responsive Design</div>
-                        <div>Photoshop</div>
+                        <div className="services-sub-section">
+                            <div>HTML5</div>
+                            <div>CSS3</div>
+                            <div>Javascript ( ES6 )</div>
+                            <div>React</div>
+                            <div>Responsive Design</div>
+                            <div>Photoshop</div>
+                        </div>
                     </div>
                     <div className="services-item">
                         <div className="services-inner-title">SERVER</div>
