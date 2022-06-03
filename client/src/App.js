@@ -40,7 +40,7 @@ const Box1 = () => {
 const Box2 = () => {
 
     const position = useMemo(() => {
-        return [-5, -2, 13]
+        return [-5, -1, 12]
     }, [])
 
     const mesh = useRef();
@@ -48,9 +48,9 @@ const Box2 = () => {
     const [boxTexture] = useTexture([stone]);
 
     useFrame(() => {
-        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
+        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .001;
-        // mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .003;
     })
 
     return (
@@ -58,7 +58,7 @@ const Box2 = () => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[3, 3, 7.5]} />
+            <boxGeometry args={[5, 4, 7]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
@@ -86,7 +86,7 @@ const Box3 = () => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[3, 3, 7.5]} />
+            <boxGeometry args={[5, 3, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
@@ -95,7 +95,7 @@ const Box3 = () => {
 const Box4 = () => {
 
     const position = useMemo(() => {
-        return [-5, -1, 33]
+        return [-5, -1, 36]
     }, [])
 
     const mesh = useRef();
@@ -103,9 +103,9 @@ const Box4 = () => {
     const [boxTexture] = useTexture([stone]);
 
     useFrame(() => {
-        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
-        // mesh.current.rotation.y = document.body.getBoundingClientRect().top * .0002;
-        mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .0002;
+        // mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
     })
 
     return (
@@ -113,7 +113,7 @@ const Box4 = () => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[3, 3, 7.5]} />
+            <boxGeometry args={[8, 3, 7.5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
@@ -122,34 +122,7 @@ const Box4 = () => {
 const Box5 = () => {
 
     const position = useMemo(() => {
-        return [4, -1, 31]
-    }, [])
-
-    const mesh = useRef();
-
-    const [boxTexture] = useTexture([stone]);
-
-    useFrame(() => {
-        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
-        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .0002;
-        mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.004;
-    })
-
-    return (
-        <mesh
-            position={position}
-            ref={mesh}
-        >
-            <boxGeometry args={[3, 3, 7.5]} />
-            <meshStandardMaterial attach="material" map={boxTexture} />
-        </mesh >
-    )
-}
-
-const Box6 = () => {
-
-    const position = useMemo(() => {
-        return [5, -1, 49]
+        return [5, -1, 45]
     }, [])
 
     const mesh = useRef();
@@ -173,7 +146,7 @@ const Box6 = () => {
     )
 }
 
-const Box7 = () => {
+const Box6 = () => {
 
     const position = useMemo(() => {
         return [-5, -1, 55]
@@ -521,11 +494,10 @@ export default function App(props) {
                             <Box4 />
                             <Box5 />
                             <Box6 />
-                            <Box7 />
                         </Suspense>
                         <MyCamera />
                     </Canvas >
-                    <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
+                    <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); }} />
                     <div className="img" role="img"></div>
                 </div>
             </MediaQuery>
@@ -564,7 +536,7 @@ export default function App(props) {
                         </Suspense>
                         <MyCamera />
                     </Canvas >
-                    <ContentTablet onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); Box7(); }} />
+                    <ContentTablet onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); }} />
                     <div className="img" role="img"></div>
                 </div>
             </MediaQuery>
