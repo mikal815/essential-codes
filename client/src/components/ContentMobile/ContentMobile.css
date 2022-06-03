@@ -148,13 +148,13 @@ h2, h3 {
     justify-self: center;
   }
 
-  .services-item {
+  .services-item-mobile {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  .services-item-container {
+  .services-item-container-mobile {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 14px;

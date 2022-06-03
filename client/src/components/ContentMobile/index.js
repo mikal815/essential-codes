@@ -92,7 +92,7 @@ export default function Content() {
 
             <div className="services-mobile" id="services-link">
                 <h2 id="services">Services</h2>
-                <div className="services-item-container">
+                <div className="services-item-container-mobile">
                     <div className="services-item">
                         <div className="services-inner-title-mobile">FRONTEND</div>
                         <div>HTML5</div>

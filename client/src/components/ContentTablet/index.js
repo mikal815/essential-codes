@@ -97,7 +97,7 @@ export default function Content() {
 
             <div className="services-tablet" id="services-link">
                 <h2 id="services">Services</h2>
-                <div className="services-item-container">
+                <div className="services-item-container-tablet">
                     <div className="services-item">
                         <div className="services-inner-title-tablet">FRONTEND</div>
                         <div>HTML5</div>
@@ -108,7 +108,7 @@ export default function Content() {
                         <div>Responsive Design</div>
                         <div>Photoshop</div>
                     </div>
-                    <div className="services-item">
+                    <div className="services-item-tablet">
                         <div className="services-inner-title-tablet">SERVER</div>
                         <div className="services-sub-section">
                             <div>Node.js</div>
