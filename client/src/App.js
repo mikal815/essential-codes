@@ -48,7 +48,6 @@ const Box2 = () => {
     const [boxTexture] = useTexture([stone]);
 
     useFrame(() => {
-        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .001;
         mesh.current.rotation.x = document.body.getBoundingClientRect().top * .003;
     })
@@ -105,7 +104,6 @@ const Box4 = () => {
     useFrame(() => {
         mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .0002;
-        // mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
     })
 
     return (
@@ -130,7 +128,6 @@ const Box5 = () => {
     const [boxTexture] = useTexture([stone]);
 
     useFrame(() => {
-        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .00025;
         mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.004;
     })
@@ -157,7 +154,6 @@ const Box6 = () => {
     const [boxTexture] = useTexture([stone]);
 
     useFrame(() => {
-        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .004;
         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .00025;
         mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.0045;
     })
@@ -291,7 +287,6 @@ const MobileBox5 = () => {
     const [boxTexture] = useTexture([stone]);
 
     useFrame(() => {
-        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
         mesh.current.rotation.z = document.body.getBoundingClientRect().top * 0.009;
     })
@@ -426,7 +421,6 @@ const TabletBox5 = () => {
     const [boxTexture] = useTexture([stone]);
 
     useFrame(() => {
-        // mesh.current.rotation.x = document.body.getBoundingClientRect().top * .005;
         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
         mesh.current.rotation.z = document.body.getBoundingClientRect().top * 0.009;
     })

@@ -257,7 +257,7 @@ export default function Content() {
                 <div className="tag-line">'Programming the future!'-<br></br></div>
             </blockquote>
 
-            <section className="left" id="hire">
+            <div className="hire-container" id="hire">
                 <h2>Hire Me</h2>
                 <form className="form span-row-2" onSubmit={handleSubmit}>
                     <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
@@ -265,7 +265,7 @@ export default function Content() {
                     <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
                     <button className="btn span-row-2" onClick={handleSubmit}>Send</button>
                 </form>
-            </section>
+            </div>
 
             <footer>
                 <Link smooth to="#top-link">Top</Link>
