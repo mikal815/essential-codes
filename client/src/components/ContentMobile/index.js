@@ -145,7 +145,7 @@ export default function Content() {
                         <a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                             <img src={SurferDepot} alt="Surfer Depot" />
                         </a>
-                        <div className="git-link-container">
+                        <div className="git-link-container-mobile">
                             <a href="https://github.com/mikal815/surfer-depot" className="git-link">VIEW CODE</a>
                         </div>
                         <div className="caption-mobile">
@@ -167,7 +167,7 @@ export default function Content() {
                         <a href="https://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={Icarus} alt="Icarus" />
                         </a>
-                        <div className="git-link-container">
+                        <div className="git-link-container-mobile">
                             <a href="https://github.com/mikal815/icarus" className="git-link">VIEW CODE</a>
                         </div>
                         <div className="caption-mobile">
@@ -180,7 +180,7 @@ export default function Content() {
                         <a href="https://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={Shapes} alt="Shape Shifter" />
                         </a>
-                        <div className="git-link-container">
+                        <div className="git-link-container-mobile">
                             <a href="https://github.com/mikal815/clicky-game" className="git-link">VIEW CODE</a>
                         </div>
                         <div className="caption-mobile">
@@ -197,7 +197,7 @@ export default function Content() {
                         <a href="https://bps-site.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={BPS} alt="Boardwalk Pier Stage" />
                         </a>
-                        <div className="git-link-container">
+                        <div className="git-link-container-mobile">
                             <a href="https://github.com/mikal815/the-event" className="git-link">VIEW CODE</a>
                         </div>
                         <div className="caption-mobile">
@@ -214,7 +214,7 @@ export default function Content() {
                         <a href="https://ochs-baseball.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={OCHS} alt="OCHS Baseball" />
                         </a>
-                        <div className="git-link-container">
+                        <div className="git-link-container-mobile">
                             <a href="https://github.com/mikal815/ochs" className="git-link">VIEW CODE</a>
                         </div>
                         <div className="caption-mobile">
@@ -227,7 +227,7 @@ export default function Content() {
                         <a href="https://music-to-my-ears-1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                             <img src={MTME} alt="Music to My Ears" />
                         </a>
-                        <div className="git-link-container">
+                        <div className="git-link-container-mobile">
                             <a href="https://github.com/mikal815/ear-trainer" className="git-link">VIEW CODE</a>
                         </div>
                         <div className="caption-mobile">

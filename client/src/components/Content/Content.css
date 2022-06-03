@@ -224,11 +224,17 @@ section {
   margin-left: 17vw;
   margin-right: 17vw;
   margin-bottom: 20rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 #portfolio-title {
   justify-self: center;
-  margin-bottom: 0;
+  font-family: "Orbitron Light", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  justify-self: center;
+  letter-spacing: 0.13rem;
 }
 
 .portfolio-container {
@@ -267,7 +273,7 @@ section {
 }
 
 .git-link-container {
-  padding-bottom: 3rem;
+  padding-bottom: 1.8rem;
 }
 
 .git-link {
