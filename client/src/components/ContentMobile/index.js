@@ -81,7 +81,7 @@ export default function Content() {
             <div className="about-mobile" id="about-link">
                 <h2>About</h2>
                 <p>
-                    Software developer building good looking functional websites and apps while
+                    Web developer building good looking functional websites and apps while
                     taking into consideration the user experience and accessibility of the end
                     product. Complex design and developmet challenges are solved using familiarity
                     with technologies and tools as well as coding abilities, analytical thinking, and creativity.

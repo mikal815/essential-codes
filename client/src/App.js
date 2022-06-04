@@ -40,7 +40,7 @@ const Box1 = () => {
 const Box2 = () => {
 
     const position = useMemo(() => {
-        return [-5, -1, 12]
+        return [-3, -1, 12]
     }, [])
 
     const mesh = useRef();
@@ -57,7 +57,7 @@ const Box2 = () => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[5, 4, 7]} />
+            <boxGeometry args={[6, 7, 2]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
@@ -67,7 +67,7 @@ const Box2 = () => {
 const Box3 = () => {
 
     const position = useMemo(() => {
-        return [5, -1, 19]
+        return [5, -1, 26]
     }, [])
 
     const mesh = useRef();
@@ -76,8 +76,7 @@ const Box3 = () => {
 
     useFrame(() => {
         mesh.current.rotation.x = document.body.getBoundingClientRect().top * .003;
-        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .00002;
-        mesh.current.rotation.z = document.body.getBoundingClientRect().top * .002;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .001;
     })
 
     return (
