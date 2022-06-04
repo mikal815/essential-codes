@@ -29,7 +29,6 @@ const Box1 = () => {
             position={position}
             ref={mesh}
         >
-            {/* <boxGeometry args={[1.8, 1.8, 4.8]} /> */}
             <boxGeometry args={[2.5, 1.8, 5.4]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
@@ -76,7 +75,7 @@ const Box3 = () => {
 
     useFrame(() => {
         mesh.current.rotation.x = document.body.getBoundingClientRect().top * .003;
-        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .001;
+        mesh.current.rotation.y = document.body.getBoundingClientRect().top * .002;
     })
 
     return (
@@ -84,7 +83,7 @@ const Box3 = () => {
             position={position}
             ref={mesh}
         >
-            <boxGeometry args={[5, 3, 7.5]} />
+            <boxGeometry args={[2, 7, 5]} />
             <meshStandardMaterial attach="material" map={boxTexture} />
         </mesh >
     )
