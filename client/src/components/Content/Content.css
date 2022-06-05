@@ -200,7 +200,6 @@ blockquote p {
   /* width: max-content; */
   margin-bottom: 20rem;
   padding-top: 3rem;
-  /* padding-bottom: 3rem; */
   padding-left: 3rem;
   padding-right: 3rem;
   justify-self: center;
@@ -221,33 +220,9 @@ blockquote p {
   grid-template-columns: repeat(3, minmax(20rem, 1fr));
 }
 
-/* LAPTOP SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
-@media (min-width: 1000px) {
-  .portfolio-container { 
-    grid-template-columns: repeat(3, minmax(20rem, 1fr)); 
-    column-gap: 1.5rem;
-  }
-}
-
-/* TABLET SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
-@media (max-width: 999px) {
-  .portfolio-container { 
-    grid-template-columns: repeat(2, minmax(20rem, 1fr));
-    column-gap: 1.5rem;
-  }
-}
-
-/* MOBILE SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
-@media (max-width: 700px) {
-  .portfolio-container { 
-    grid-template-columns: repeat(1, minmax(20rem, 1fr)); 
-  }
-}
-
 .project {
   display: grid;
   justify-items: center;
-  padding-bottom: 11rem;
 }
 
 .project img {
@@ -258,7 +233,7 @@ blockquote p {
 
 .caption {
   text-indent: 2.1rem;
-  height: 8rem;
+  height: 18rem;
   width: 20rem;
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
@@ -350,3 +325,29 @@ footer {
   justify-content: space-around;
 }
 
+/* LAPTOP SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 1000px) {
+  .portfolio-container { 
+    grid-template-columns: repeat(3, minmax(20rem, 1fr)); 
+    column-gap: 1.5rem;
+  }
+}
+
+/* TABLET SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 999px) {
+  .portfolio-container { 
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    column-gap: 1.5rem;
+  }
+}
+
+/* MOBILE SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 700px) {
+  .portfolio-container { 
+    grid-template-columns: repeat(1, minmax(20rem, 1fr)); 
+  }
+
+  .caption {
+    height: fit-content;
+  }
+}
