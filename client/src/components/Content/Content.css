@@ -12,14 +12,14 @@ header {
   font-family: "Orbitron Light", sans-serif;
   letter-spacing: 0.8rem;
   grid-column: span 12 / auto;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 12%;
+  margin-right: 12%;
   font-size: 1.75rem;
   padding-top: 1.5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-bottom: 2.5rem;
-  margin-top: 15rem;
+  margin-top: 35vh;
   margin-bottom: 20rem;
 }
 
@@ -42,7 +42,7 @@ header h1 {
   display: grid;
   grid-column: span 4 / auto;
   grid-template-columns: repeat(4, 1fr);
-  padding-bottom: 1rem;
+  padding-bottom: 1.2rem;
   margin-bottom: 0.3rem;
 }
 
@@ -197,7 +197,6 @@ blockquote p {
   display: grid;
   background: rgba(15, 15, 15, 0.685);
   grid-column: span 12 / auto;
-  /* width: max-content; */
   margin-bottom: 20rem;
   padding-top: 3rem;
   padding-left: 3rem;
@@ -349,5 +348,9 @@ footer {
 
   .caption {
     height: fit-content;
+  }
+
+  .header {
+    
   }
 }
