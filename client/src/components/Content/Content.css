@@ -350,7 +350,10 @@ footer {
     height: fit-content;
   }
 
-  .header {
-    
+  .about {
+    grid-column: span 12 / auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-items: center;
   }
 }
