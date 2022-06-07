@@ -161,38 +161,6 @@ blockquote p {
   font-weight: bold;
 }
 
-.tag-line {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.623);
-  font-size: 3rem;
-  display: inline;
-  line-height: 1.25;
-  letter-spacing: 0.2rem;
-
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
-
-.hire-container {
-  display: grid;
-  padding: 2rem;
-  background: rgba(15, 15, 15, 0.685);
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin-bottom: 20rem;
-  grid-column: 6 / 12;
-}
-
-.hire-container h2 {
-  font-family: "Orbitron Light", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  justify-self: center;
-  letter-spacing: 0.13rem;
-}
-
 .portfolio {
   display: grid;
   background: rgba(15, 15, 15, 0.685);
@@ -255,6 +223,37 @@ blockquote p {
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   text-decoration: none;
   text-align: center;
+}
+
+.tag-line {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.623);
+  font-size: 3rem;
+  display: inline;
+  line-height: 1.25;
+  letter-spacing: 0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.hire-container {
+  display: grid;
+  padding: 2rem;
+  background: rgba(15, 15, 15, 0.685);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 20rem;
+  grid-column: 6 / 12;
+}
+
+.hire-container h2 {
+  font-family: "Orbitron Light", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  justify-self: center;
+  letter-spacing: 0.13rem;
 }
 
 .input {
@@ -334,14 +333,42 @@ footer {
 
 /* TABLET SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
 @media (max-width: 999px) {
+
+  .services {
+    grid-column: span 12 / auto;
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
   .portfolio-container { 
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
     column-gap: 1.5rem;
+  }
+
+  .about {
+    grid-column: span 12 / auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-items: center;
+  }
+
+  .hire-container {
+    grid-column: span 12 / auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    justify-items: center;
   }
 }
 
 /* MOBILE SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
 @media (max-width: 700px) {
+
+  .services {
+    grid-column: span 12 / auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .portfolio-container { 
     grid-template-columns: repeat(1, minmax(20rem, 1fr)); 
   }
@@ -355,5 +382,20 @@ footer {
     margin-left: 2rem;
     margin-right: 2rem;
     justify-items: center;
+  }
+
+  #about-link {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .input {
+    width: 20rem;
+    max-width: 30rem;
+  }
+
+  .textarea {
+    width: 20rem;
+    max-width: 30rem;
   }
 }
