@@ -410,4 +410,30 @@ footer {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
+  .tag-line {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navigation {
+    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  #prof {
+    padding-top: 1.6rem;
+  }
 }
