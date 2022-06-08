@@ -398,4 +398,16 @@ footer {
     width: 20rem;
     max-width: 30rem;
   }
+
+  footer {
+    display: grid;
+    justify-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  footer a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
