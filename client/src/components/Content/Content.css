@@ -347,8 +347,8 @@ footer {
 
   .about {
     grid-column: span 12 / auto;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     justify-items: center;
   }
 
