@@ -178,25 +178,23 @@ export default function App(props) {
 
     return (
         <>
-            <MediaQuery minDeviceWidth={850}>
-                <div className="laptop-layout">
-                    <Canvas style={{ position: "fixed" }}>
-                        <ambientLight intensity={1.00} color={0xffffff} />
-                        <pointLight position={[5, 5, 5]} color={0xffffff} />
-                        <Suspense fallback={null}>
-                            <Box1 />
-                            <Box2 />
-                            <Box3 />
-                            <Box4 />
-                            <Box5 />
-                            <Box6 />
-                        </Suspense>
-                        <MyCamera />
-                    </Canvas >
-                    <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); }} />
-                    <div className="img" role="img"></div>
-                </div>
-            </MediaQuery>
+            <div className="laptop-layout">
+                <Canvas style={{ position: "fixed" }}>
+                    <ambientLight intensity={1.00} color={0xffffff} />
+                    <pointLight position={[5, 5, 5]} color={0xffffff} />
+                    <Suspense fallback={null}>
+                        <Box1 />
+                        <Box2 />
+                        <Box3 />
+                        <Box4 />
+                        <Box5 />
+                        <Box6 />
+                    </Suspense>
+                    <MyCamera />
+                </Canvas >
+                <Content onScroll={() => { MyCamera(); Box1(); Box2(); Box3(); Box4(); Box5(); Box6(); }} />
+                <div className="img" role="img"></div>
+            </div>
         </>
     )
 }

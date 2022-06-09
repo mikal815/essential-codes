@@ -37,6 +37,7 @@ header h1 {
   margin-bottom: 0;
   justify-self: center;
   grid-column: span 4/ auto;
+  text-align: center;
 }
 
 .navigation {
