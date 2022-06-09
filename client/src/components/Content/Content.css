@@ -358,6 +358,10 @@ footer {
     margin-right: 3rem;
     justify-items: center;
   }
+
+  header h1 {
+    text-align: center;
+  }
 }
 
 /* MOBILE SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
