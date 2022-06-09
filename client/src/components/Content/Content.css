@@ -28,6 +28,7 @@ header h1 {
   margin-bottom: 0;
   justify-self: center;
   grid-column: span 4 /auto;
+  text-align: center;
 }
 
 #prof {
@@ -332,7 +333,7 @@ footer {
 }
 
 /* TABLET SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
-@media (max-width: 999px) {
+@media (max-width: 999px){
 
   .services {
     grid-column: span 12 / auto;
@@ -357,10 +358,6 @@ footer {
     margin-left: 7rem;
     margin-right: 7rem;
     justify-items: center;
-  }
-
-  header h1 {
-    text-align: center;
   }
 }
 
@@ -438,10 +435,6 @@ footer {
     margin-top: 5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-
-  header h1 {
-    text-align: center;
   }
 
   #prof {
