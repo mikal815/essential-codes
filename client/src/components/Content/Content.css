@@ -336,8 +336,8 @@ footer {
 
   .services {
     grid-column: span 12 / auto;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
   }
 
   .portfolio-container { 
@@ -354,8 +354,8 @@ footer {
 
   .hire-container {
     grid-column: span 12 / auto;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
     justify-items: center;
   }
 
@@ -391,6 +391,13 @@ footer {
   #about-link {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .hire-container {
+    grid-column: span 12 / auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    justify-items: center;
   }
 
   .input {
