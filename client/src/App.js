@@ -4,9 +4,8 @@ import { useTexture } from '@react-three/drei';
 import './App.css';
 import stone from '../src/assets/images/stone.jpg'
 import Content from './components/Content'
-import MediaQuery from 'react-responsive';
 
-// 3D BOXES ON LAPTOP ////////////////////////////////////////////////////////////////////////////////
+// 3D BOXES ////////////////////////////////////////////////////////////////////////////////
 const Box1 = () => {
 
     const position = useMemo(() => {
@@ -178,7 +177,7 @@ export default function App(props) {
 
     return (
         <>
-            <div className="laptop-layout">
+            <div className="layout">
                 <Canvas style={{ position: "fixed" }}>
                     <ambientLight intensity={1.00} color={0xffffff} />
                     <pointLight position={[5, 5, 5]} color={0xffffff} />
