@@ -411,11 +411,16 @@ footer {
     padding-right: 2rem;
   }
 
+  .tag-line {
+    width: fit-content;
+  }
+
   .hire-container {
     grid-column: span 12 / auto;
     margin-left: 3rem;
     margin-right: 3rem;
     justify-items: center;
+    justify-self: center;
   }
 
   .input {
