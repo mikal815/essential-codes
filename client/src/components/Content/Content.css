@@ -285,7 +285,9 @@ blockquote p {
 }
 
 .btn {
-  margin-bottom: 1rem;
+  margin-bottom: 2.6rem;
+  width: 11rem;
+  height: 2.2rem;
   text-decoration: none;
   color: #ffffff;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
