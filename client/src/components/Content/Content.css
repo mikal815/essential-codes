@@ -260,6 +260,10 @@ blockquote p {
   letter-spacing: 0.13rem;
 }
 
+.form {
+  display: grid;
+}
+
 .input {
   width: 31rem;
   height: 2.5rem;
