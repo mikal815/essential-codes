@@ -253,10 +253,10 @@ blockquote p {
 }
 
 .hire-container {
-  display: grid;
+  text-align: center;
   justify-content: center;
-  padding-left: 18rem;
-  padding-right: 18rem;
+  /* padding-left: 18rem;
+  padding-right: 18rem; */
   background: rgba(15, 15, 15, 0.685);
   font-size: 1.25rem;
   line-height: 1.5;
@@ -277,7 +277,8 @@ blockquote p {
 }
 
 .input {
-  width: 31rem;
+  /* width: auto; */
+  /* grid-column: 3 / 9; */
   height: 2.5rem;
   padding-left: 0.8rem;
   margin-bottom: 1rem;
@@ -286,7 +287,7 @@ blockquote p {
 }
 
 .textarea {
-  width: 31rem;
+  /* width: 31rem; */
   height: 11rem;
   margin-bottom: 1rem;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
@@ -376,8 +377,8 @@ footer {
 
   .hire-container {
     grid-column: span 12 / auto;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    /* margin-left: 7rem; */
+    /* margin-right: 7rem; */
     justify-items: center;
   }
 }
@@ -416,21 +417,13 @@ footer {
   }
 
   .hire-container {
-    grid-column: span 12 / auto;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    justify-items: center;
-    justify-self: center;
-  }
-
-  .input {
-    width: 20rem;
-    max-width: 30rem;
+    grid-column: 2/ 12;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .textarea {
-    width: 20rem;
-    max-width: 30rem;
+    width: auto;
   }
 
   footer {
