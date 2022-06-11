@@ -204,7 +204,8 @@ blockquote p {
 .project {
   display: grid;
   justify-items: center;
-  width: 20rem;
+  padding-bottom: 1rem;
+  /* width: 20rem; */
 }
 
 .project img {
@@ -398,6 +399,10 @@ footer {
     margin-right: 1rem;
   }
 
+  .inner-title {
+    font-size: 1rem;
+  }
+
   .portfolio {
     width: 60vw;
     justify-content: center;
@@ -412,7 +417,9 @@ footer {
   }
 
   .caption {
-    height: fit-content;
+    width: 80%;
+    height: auto;
+    font-size: 0.8rem;
   }
 
   .about {
