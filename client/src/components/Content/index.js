@@ -202,7 +202,7 @@ export default function Content() {
                     </div>
 
                     <div className="project">
-                        <div className="inner-title">BOARDWALK PIER STAGE</div>
+                        <div className="inner-title" id="bps-title">BOARDWALK PIER STAGE</div>
                         <a href="https://bps-site.surge.sh/" target="_blank" rel="noopener noreferrer">
                             <img src={BPS} alt="Boardwalk Pier Stage" />
                         </a>

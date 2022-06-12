@@ -440,6 +440,12 @@ footer {
     font-size: 1rem;
   }
 
+  #bps-title {
+    width: 12rem;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
   .about {
     grid-column: span 12 / auto;
     margin-left: 2rem;
