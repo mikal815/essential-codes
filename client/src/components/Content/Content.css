@@ -202,7 +202,6 @@ blockquote {
   justify-self: center;
   display: grid;
   grid-template-columns: repeat(3, minmax(10rem, 1fr));
-  /* width: 50vw; */
 }
 
 .project {
@@ -284,17 +283,15 @@ blockquote {
 }
 
 .input {
-  /* width: auto; */
-  /* grid-column: 3 / 9; */
   height: 2.5rem;
   padding-left: 0.8rem;
   margin-bottom: 1rem;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
+  border-radius: 0;
 }
 
 .textarea {
-  /* width: 31rem; */
   height: 11rem;
   margin-bottom: 1rem;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
@@ -302,6 +299,7 @@ blockquote {
   padding-top: 1rem;
   padding-left: 0.7rem;
   resize: none;
+  border-radius: 0;
 }
 
 .btn {
