@@ -289,6 +289,7 @@ blockquote {
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
   border-radius: 0;
+  border: none;
 }
 
 .textarea {
@@ -300,6 +301,7 @@ blockquote {
   padding-left: 0.7rem;
   resize: none;
   border-radius: 0;
+  border: none;
 }
 
 .btn {
