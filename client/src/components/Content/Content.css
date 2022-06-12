@@ -396,7 +396,7 @@ footer {
   .services {
     grid-column: span 12 / auto;
     column-gap: 5%;
-    width: 75vw;
+    width: 70vw;
     justify-self: center;
     justify-content: center;
   }
