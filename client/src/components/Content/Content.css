@@ -327,18 +327,17 @@ footer a {
 }
 
 ::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 1rem;
 } 
   
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.623); 
+  background: rgba(0, 0, 0, 0.438); 
 }
    
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.247); 
-  /* background-image: linear-gradient(white,white, black); */
+  background: rgba(255, 255, 255, 0.418); 
 }
   
 /* Handle on hover */
