@@ -395,8 +395,22 @@ footer {
 
   .services {
     grid-column: span 12 / auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    column-gap: 5%;
+    width: 75vw;
+    justify-self: center;
+    justify-content: center;
+  }
+
+  .services-item-container {
+    column-gap: 2rem;
+  }
+
+  .services-inner-title {
+    font-size: 1.2rem;
+  }
+
+  .services-sub-section div {
+    font-size: 0.8rem;
   }
 
   .inner-title {
