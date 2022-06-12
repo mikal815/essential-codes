@@ -432,6 +432,8 @@ footer {
   #about-link {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-left: 4%;
+    margin-right: 4%;
   }
 
   #about-link p {
