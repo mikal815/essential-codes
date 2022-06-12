@@ -82,7 +82,7 @@ export default function Content() {
             </header>
 
             <blockquote>
-                <p>'Putting the pieces together for you and your business'-</p>
+                <div className='motto'>'Putting the pieces together for you and your business'-</div>
             </blockquote>
 
             <div className="about" id="about-link">
