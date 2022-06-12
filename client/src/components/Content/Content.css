@@ -1,3 +1,7 @@
+body {
+  overflow: overlay;
+}
+
 .content-laptop {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -320,6 +324,26 @@ footer a {
   font-family: "Dominik_Thin", sans-serif;
   text-decoration: none;
   color:white;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+} 
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.623); 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.247); 
+  /* background-image: linear-gradient(white,white, black); */
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 footer {
