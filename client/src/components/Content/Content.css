@@ -395,14 +395,18 @@ footer {
 
   .services {
     grid-column: span 12 / auto;
-    column-gap: 5%;
+    /* column-gap: 15%; */
     width: 70vw;
     justify-self: center;
     justify-content: center;
   }
 
+  .services h2 {
+    padding-bottom: 0;
+  }
+
   .services-item-container {
-    column-gap: 2rem;
+    column-gap: 1rem;
   }
 
   .services-inner-title {
