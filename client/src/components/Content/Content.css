@@ -184,6 +184,8 @@ blockquote {
   padding-left: 3rem;
   padding-right: 3rem;
   justify-self: center;
+  justify-content: center;
+  width: fit-content;
 }
 
 #portfolio-title {
@@ -197,15 +199,17 @@ blockquote {
 }
 
 .portfolio-container {
+  justify-self: center;
   display: grid;
-  grid-template-columns: repeat(3, minmax(20rem, 1fr));
+  grid-template-columns: repeat(3, minmax(10rem, 1fr));
+  /* width: 50vw; */
 }
 
 .project {
   display: grid;
   justify-items: center;
   padding-bottom: 1rem;
-  /* width: 20rem; */
+  width: 20rem;
 }
 
 .project img {
