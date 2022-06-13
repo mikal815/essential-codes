@@ -54,16 +54,24 @@ header h1 {
   margin-bottom: 0.3rem;
 }
 
-.navigation .navi-link {
+.navi-link {
   text-decoration: none;
   font-family: "Dominik_Thin";
   color: white;
   padding-top: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-bottom: 0.6rem;
   letter-spacing: 0.13rem;
 }
 
-.navigation .hire {
+.navi-link:hover {
+  /* background: rgba(255, 255, 255, 0.664); */
+  background: rgba(255, 255, 255, 0.418); 
+
+}
+
+.hire {
   text-decoration: none;
   font-family: "Dominik_Thin";
   color: black;
@@ -73,6 +81,11 @@ header h1 {
   padding-left: 1rem;
   padding-right: 1rem;
   letter-spacing: 0.13rem;
+}
+
+.hire:hover {
+  background: rgba(255, 255, 255, 0.418); 
+  color: white;
 }
 
 .navigation div {
@@ -314,15 +327,15 @@ blockquote {
   height: 2.5rem;
   text-decoration: none;
   color: white;
-  /* background: rgba(255, 255, 255, 0.664);  */
   background: rgba(255, 255, 255, 0.418); 
-
   font-size: 1.1rem;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-  /* background-color: transparent; */
-  /* border: none; */
-  /* border: 0.06rem solid white; */
   justify-self: center;
+  border: none;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.664);
 }
 
 footer a {
