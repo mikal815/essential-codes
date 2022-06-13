@@ -311,13 +311,17 @@ blockquote {
 .btn {
   margin-bottom: 2.6rem;
   width: 11rem;
-  height: 2.3rem;
+  height: 2.5rem;
   text-decoration: none;
   color: white;
+  /* background: rgba(255, 255, 255, 0.664);  */
+  background: rgba(255, 255, 255, 0.418); 
+
+  font-size: 1.1rem;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-  background-color: transparent;
+  /* background-color: transparent; */
   /* border: none; */
-  border: 0.06rem solid white;
+  /* border: 0.06rem solid white; */
   justify-self: center;
 }
 
