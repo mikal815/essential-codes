@@ -227,9 +227,14 @@ blockquote {
 }
 
 .project img {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
+
+  width: 20rem;
+  height: 10rem;
   padding-bottom: 2rem;
+
+  object-fit:cover;
 }
 
 .caption {
