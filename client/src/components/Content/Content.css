@@ -227,8 +227,6 @@ blockquote {
 }
 
 .project img {
-  /* width: 100%;
-  height: auto; */
   width: 20rem;
   height: 10rem;
   padding-bottom: 2rem;
@@ -368,7 +366,6 @@ footer {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   margin-bottom: 1rem;
-  /* justify-content: center; */
   justify-content: space-evenly;
   
 }
