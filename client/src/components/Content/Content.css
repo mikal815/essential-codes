@@ -462,8 +462,11 @@ footer a:hover {
     grid-template-columns: repeat(1, minmax(20rem, 1fr)); 
   }
 
-  .project a {
-    width: 80%;
+  .project img {
+    width: 15rem;
+    height: 10rem;
+    padding-bottom: 2rem;
+    object-fit:cover;
   }
 
   .caption {
