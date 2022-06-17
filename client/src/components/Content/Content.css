@@ -463,16 +463,16 @@ footer a:hover {
   }
 
   .project img {
-    width: 15rem;
+    width: 17rem;
     height: 10rem;
     padding-bottom: 2rem;
     object-fit:cover;
   }
 
   .caption {
-    width: 15rem;
+    width: 17rem;
     height: auto;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   #bps-title {
