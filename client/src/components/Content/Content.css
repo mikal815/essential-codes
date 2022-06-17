@@ -470,9 +470,9 @@ footer a:hover {
   }
 
   .caption {
-    width: 80%;
+    width: 15rem;
     height: auto;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   #bps-title {
