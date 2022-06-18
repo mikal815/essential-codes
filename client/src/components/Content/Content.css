@@ -211,6 +211,8 @@ blockquote {
   justify-self: center;
   letter-spacing: 0.13rem;
   font-size: 1.9rem;
+  background: rgba(15, 15, 15, 0.452);
+  padding: 1rem;
 }
 
 .portfolio-container {
@@ -224,12 +226,12 @@ blockquote {
   justify-items: center;
   padding-bottom: 1rem;
   width: 20rem;
+  background: rgba(15, 15, 15, 0.452);
 }
 
 .project img {
   width: 20rem;
   height: 10rem;
-  padding-bottom: 2rem;
   object-fit:cover;
 }
 
@@ -243,15 +245,13 @@ blockquote {
 }
 
 .inner-title {
-  padding-top: 3.5rem;
-  padding-bottom: 2rem;
   font-family: "dominik.regular", sans-serif;
   font-size: 1.5rem;
 }
 
-.git-link-container {
+/* .git-link-container {
   padding-bottom: 1.8rem;
-}
+} */
 
 .git-link {
   color: rgb(163, 163, 163);
