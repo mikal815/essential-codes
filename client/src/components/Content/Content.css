@@ -222,8 +222,9 @@ blockquote {
 }
 
 .wrapper {
-  /* background: rgba(15, 15, 15, 0.452); */
-  background: rgba(15, 15, 15, 0.384);
+  /* background: rgba(15, 15, 15, 0.685); */
+  background: rgba(15, 15, 15, 0.452);
+  /* background: rgba(15, 15, 15, 0.384); */
   display: grid;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -242,7 +243,9 @@ blockquote {
   justify-items: center;
   padding-bottom: 1rem;
   width: 20rem;
-  background: rgba(15, 15, 15, 0.384);
+  /* background: rgba(15, 15, 15, 0.384); */
+  background: rgba(15, 15, 15, 0.452);
+  /* background: rgba(15, 15, 15, 0.685); */
   padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
