@@ -198,6 +198,7 @@ blockquote {
   padding-top: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-bottom: 3rem;
   justify-self: center;
   justify-content: center;
   width: fit-content;
@@ -205,20 +206,35 @@ blockquote {
 
 #portfolio-title {
   justify-self: center;
+  justify-content: center;
   font-family: "Orbitron Light", sans-serif;
   font-weight: 900;
   font-style: normal;
-  justify-self: center;
   letter-spacing: 0.13rem;
   font-size: 1.9rem;
-  background: rgba(15, 15, 15, 0.452);
-  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+.inner-title {
+  font-family: "dominik.regular", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.wrapper {
+  /* background: rgba(15, 15, 15, 0.452); */
+  background: rgba(15, 15, 15, 0.384);
+  display: grid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5rem;
 }
 
 .portfolio-container {
   justify-self: center;
   display: grid;
   grid-template-columns: repeat(3, minmax(10rem, 1fr));
+  row-gap: 3rem;
 }
 
 .project {
@@ -226,13 +242,18 @@ blockquote {
   justify-items: center;
   padding-bottom: 1rem;
   width: 20rem;
-  background: rgba(15, 15, 15, 0.452);
+  background: rgba(15, 15, 15, 0.384);
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 .project img {
   width: 20rem;
   height: 10rem;
   object-fit:cover;
+  padding-bottom: 2rem;
 }
 
 .caption {
@@ -244,14 +265,9 @@ blockquote {
   line-height: 1.4rem;
 }
 
-.inner-title {
-  font-family: "dominik.regular", sans-serif;
-  font-size: 1.5rem;
+.git-link-container {
+  padding-bottom: 2rem;
 }
-
-/* .git-link-container {
-  padding-bottom: 1.8rem;
-} */
 
 .git-link {
   color: rgb(163, 163, 163);
