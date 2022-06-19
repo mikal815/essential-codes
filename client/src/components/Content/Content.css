@@ -14,6 +14,7 @@ body {
 header {
   display: grid;
   font-family: "Orbitron Light", sans-serif;
+  background: rgba(15, 15, 15, 0.288);
   letter-spacing: 0.8rem;
   grid-column: span 12 / auto;
   margin-left: 12%;
