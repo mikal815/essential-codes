@@ -223,7 +223,7 @@ blockquote {
   font-style: normal;
   letter-spacing: 0.13rem;
   font-size: 1.9rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 .inner-title {
@@ -237,7 +237,7 @@ blockquote {
   display: grid;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
