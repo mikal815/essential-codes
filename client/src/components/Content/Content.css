@@ -222,13 +222,12 @@ blockquote {
 }
 
 .wrapper {
-  /* background: rgba(15, 15, 15, 0.685); */
   background: rgba(15, 15, 15, 0.452);
-  /* background: rgba(15, 15, 15, 0.384); */
   display: grid;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 .portfolio-container {
@@ -241,11 +240,8 @@ blockquote {
 .project {
   display: grid;
   justify-items: center;
-  padding-bottom: 1rem;
   width: 20rem;
-  /* background: rgba(15, 15, 15, 0.384); */
   background: rgba(15, 15, 15, 0.452);
-  /* background: rgba(15, 15, 15, 0.685); */
   padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -295,13 +291,18 @@ blockquote {
 .hire-container {
   text-align: center;
   justify-content: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 3rem;
   background: rgba(15, 15, 15, 0.685);
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 20rem;
   grid-column: 7 / 12;
+}
+
+.hire-wrapper {
+  background: rgba(15, 15, 15, 0.452);
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .hire-container h2 {
@@ -310,6 +311,10 @@ blockquote {
   font-style: normal;
   justify-self: center;
   letter-spacing: 0.13rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
 }
 
 .form {
@@ -319,7 +324,6 @@ blockquote {
 .input {
   height: 2.5rem;
   padding-left: 0.8rem;
-  margin-bottom: 1rem;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
   border-radius: 0;
@@ -328,7 +332,6 @@ blockquote {
 
 .textarea {
   height: 11rem;
-  margin-bottom: 1rem;
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   color: grey;
   padding-top: 1rem;
