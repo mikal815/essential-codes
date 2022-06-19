@@ -86,15 +86,17 @@ export default function Content() {
             </blockquote>
 
             <div className="about" id="about-link">
-                <h2>About</h2>
-                <p>
-                    Web developer building good looking functional websites and apps while
-                    taking into consideration the user experience and accessibility of the end
-                    product. Complex design and developmet challenges are solved using familiarity
-                    with technologies and tools as well as coding abilities, analytical thinking, and creativity.
-                    Certified "Full Stack Web Developer" through UPenn LPS coding boot camp &
-                    The New York Code + Design Academy.
-                </p>
+                <div className='about-wrapper'>
+                    <h2>About</h2>
+                    <p>
+                        Web developer building good looking functional websites and apps while
+                        taking into consideration the user experience and accessibility of the end
+                        product. Complex design and developmet challenges are solved using familiarity
+                        with technologies and tools as well as coding abilities, analytical thinking, and creativity.
+                        Certified "Full Stack Web Developer" through UPenn LPS coding boot camp &
+                        The New York Code + Design Academy.
+                    </p>
+                </div>
             </div>
 
             <div className="services" id="services-link">
