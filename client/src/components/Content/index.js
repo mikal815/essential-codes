@@ -151,7 +151,7 @@ export default function Content() {
             </div>
 
             <div className="portfolio" id="projects-link">
-                <div className='wrapper'>
+                <div className='projects-wrapper'>
                     <div id="portfolio-title">Projects</div>
                     <div className="portfolio-container">
                         <div className="project">
