@@ -148,11 +148,17 @@ blockquote {
   display: grid;
   grid-column: 7 / 12;
   height: fit-content;
-  padding: 2rem;
+  padding: 3rem;
   background: rgba(15, 15, 15, 0.685);
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 20rem;
+}
+
+.services-wrapper {
+  display: grid;
+  background: rgba(15, 15, 15, 0.452);
+  padding-bottom: 3rem;
 }
 
 .services h2 {
@@ -161,14 +167,14 @@ blockquote {
   font-style: normal;
   justify-self: center;
   letter-spacing: 0.13rem;
-  padding-bottom: 0.6rem;
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .services-item {
   text-align: center;
   font-family: "dominik.regular";
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .services-sub-section div {
@@ -180,6 +186,7 @@ blockquote {
 
 .services-item-container {
   display: grid;
+  row-gap: 3rem;
   grid-template-columns: 1fr 1fr;
 }
 

@@ -100,49 +100,51 @@ export default function Content() {
             </div>
 
             <div className="services" id="services-link">
-                <h2 id="services">Services</h2>
-                <div className="services-item-container">
-                    <div className="services-item">
-                        <div className="services-inner-title">FRONTEND</div>
-                        <div className="services-sub-section">
-                            <div>HTML5</div>
-                            <div>CSS3</div>
-                            <div>Javascript ( ES6 )</div>
-                            <div>React</div>
-                            <div>Responsive Design</div>
-                            <div>Photoshop</div>
+                <div className='services-wrapper'>
+                    <h2 id="services">Services</h2>
+                    <div className="services-item-container">
+                        <div className="services-item">
+                            <div className="services-inner-title">FRONTEND</div>
+                            <div className="services-sub-section">
+                                <div>HTML5</div>
+                                <div>CSS3</div>
+                                <div>Javascript ( ES6 )</div>
+                                <div>React</div>
+                                <div>Responsive Design</div>
+                                <div>Photoshop</div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="services-item">
-                        <div className="services-inner-title">SERVER</div>
-                        <div className="services-sub-section">
-                            <div>Node.js</div>
-                            <div>Express</div>
-                            <div>RESTful Web Services</div>
-                            <div>Email Services</div>
-                            <div>Payment systems</div>
-                            <div>Configuration</div>
+                        <div className="services-item">
+                            <div className="services-inner-title">SERVER</div>
+                            <div className="services-sub-section">
+                                <div>Node.js</div>
+                                <div>Express</div>
+                                <div>RESTful Web Services</div>
+                                <div>Email Services</div>
+                                <div>Payment systems</div>
+                                <div>Configuration</div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="services-item">
-                        <div className="services-inner-title">DATABASE</div>
-                        <div className="services-sub-section">
-                            <div>MongoDB</div>
-                            <div>MySQL</div>
-                            <div>Password hashing</div>
-                            <div>Authentication</div>
+                        <div className="services-item">
+                            <div className="services-inner-title">DATABASE</div>
+                            <div className="services-sub-section">
+                                <div>MongoDB</div>
+                                <div>MySQL</div>
+                                <div>Password hashing</div>
+                                <div>Authentication</div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="services-item">
-                        <div className="services-inner-title">ADDITIONAL</div>
-                        <div className="services-sub-section">
-                            <div>Debugging</div>
-                            <div>Testing / Error handling</div>
-                            <div>Tech integration</div>
-                            <div>Project Architecture</div>
-                            <div>Data Scraping</div>
-                            <div>Version Control</div>
-                            <div>Deployment</div>
+                        <div className="services-item">
+                            <div className="services-inner-title">ADDITIONAL</div>
+                            <div className="services-sub-section">
+                                <div>Debugging</div>
+                                <div>Testing / Error handling</div>
+                                <div>Tech integration</div>
+                                <div>Project Architecture</div>
+                                <div>Data Scraping</div>
+                                <div>Version Control</div>
+                                <div>Deployment</div>
+                            </div>
                         </div>
                     </div>
                 </div>
