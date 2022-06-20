@@ -275,10 +275,12 @@ export default function Content() {
             </div>
 
             <footer>
-                <Link smooth to="#top-link">Top</Link>
-                <Link smooth to="#about-link">About</Link>
-                <Link smooth to="#services-link">Services</Link>
-                <Link smooth to="#projects-link">Projects</Link>
+                <div className='footer-wrapper'>
+                    <Link smooth to="#top-link">Top</Link>
+                    <Link smooth to="#about-link">About</Link>
+                    <Link smooth to="#services-link">Services</Link>
+                    <Link smooth to="#projects-link">Projects</Link>
+                </div>
             </footer>
         </div>
     )
