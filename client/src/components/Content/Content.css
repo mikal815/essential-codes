@@ -19,9 +19,9 @@ header {
   grid-column: span 12 / auto;
   font-size: 1.75rem;
   padding: 3rem;
-  margin-top: 25vh;
+  margin-top: 24vh;
   margin-bottom: 20rem;
-  width: 73%;
+  width: 71%;
   justify-self: center;
 }
 
@@ -36,7 +36,7 @@ header h1 {
 
 #prof {
   font-size: 1.5rem;
-  margin-top: 1.4rem;
+  margin-top: 1.7rem;
   margin-bottom: 0;
   justify-self: center;
   grid-column: span 12/ auto;
@@ -48,8 +48,7 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: space-between;
-  padding-bottom: 1.4rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1.7rem;
 }
 
 .navigation-wrapper {
@@ -130,7 +129,6 @@ blockquote {
 
 .about-wrapper {
   display: grid;
-  /* background: rgba(15, 15, 15, 0.452); */
   background: rgba(15, 15, 15, 0.288);
   padding: 3rem;
 }
@@ -165,7 +163,6 @@ blockquote {
 
 .services-wrapper {
   display: grid;
-  /* background: rgba(15, 15, 15, 0.452); */
   background: rgba(15, 15, 15, 0.288);
   padding-bottom: 3rem;
 }
@@ -238,7 +235,6 @@ blockquote {
 }
 
 .projects-wrapper {
-  /* background: rgba(15, 15, 15, 0.452); */
   background: rgba(15, 15, 15, 0.288);
   display: grid;
   padding: 3rem;
