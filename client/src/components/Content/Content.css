@@ -20,10 +20,7 @@ header {
   margin-left: 12%;
   margin-right: 12%;
   font-size: 1.75rem;
-  padding-top: 1.5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 3rem;
   margin-top: 33vh;
   margin-bottom: 20rem;
 }
@@ -99,8 +96,6 @@ blockquote {
   letter-spacing: 0.2rem;
   font-weight: 900;
   grid-column: span 12 / auto;
-  /* margin-left: 14%;
-  margin-right: 14%; */
   margin-bottom: 20rem;
   width: max-content;
   justify-self: center;
