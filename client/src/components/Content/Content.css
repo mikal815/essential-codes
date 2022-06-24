@@ -4,7 +4,7 @@ body {
 
 .content-laptop {
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(1, 1fr));
   overflow-x: hidden;
   color: white;
   z-index: 99;
@@ -463,10 +463,29 @@ footer a:hover {
 /* MOBILE SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
 @media (max-width: 700px) {
 
+  .content-laptop {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   header {
-    grid-column: span 12 / auto;
-    justify-self: center;
-    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+    /* grid-column: span 12 / auto; */
+    /* grid-template-columns: 1fr; */
+    /* justify-items: center; */
+    margin-top: 5rem;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #prof {
+    font-size: 1.1rem;
+    padding-top: 1rem;
   }
 
   .motto {
@@ -501,14 +520,16 @@ footer a:hover {
   }
 
   .services {
-    grid-column: span 12 / auto;
-    width: 70vw;
-    justify-self: center;
-    justify-content: center;
+    /* grid-column: span 12 / auto; */
+    padding: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    /* justify-self: center;
+    justify-content: center; */
   }
 
   .services h2 {
-    padding-bottom: 0;
+    padding-bottom: 2rem;
   }
 
   .services-item-container {
@@ -600,22 +621,5 @@ footer a:hover {
 
   .navigation div {
     font-size: 1rem;
-  }
-
-  header {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    margin-top: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  #prof {
-    font-size: 1.1rem;
-    padding-top: 1rem;
   }
 }
