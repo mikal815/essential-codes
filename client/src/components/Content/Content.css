@@ -117,7 +117,7 @@ blockquote {
 
 .about {
   display: grid;
-  grid-column: 2 / 8;
+  grid-column: 2 / 4;
   padding: 3rem;
   background: rgba(15, 15, 15, 0.685);
   font-size: 1.25rem;
@@ -475,8 +475,6 @@ footer a:hover {
     /* grid-template-columns: 1fr; */
     /* justify-items: center; */
     margin-top: 5rem;
-    /* margin-left: 1rem;
-    margin-right: 1rem; */
   }
 
   header h1 {
