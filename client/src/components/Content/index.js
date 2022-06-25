@@ -69,7 +69,7 @@ export default function Content() {
 
         <div className="content-laptop" id="top-link">
 
-            <header>
+            <div className='header'>
                 <div className='header-wrapper'>
                     <div className='navigation'>
                         <div><Link smooth to="#services-link" className='navi-link'>Services</Link></div>
@@ -81,7 +81,7 @@ export default function Content() {
                     <h1>MIKE MENSINGER</h1>
                     <div id='prof'>Web Developer</div>
                 </div>
-            </header>
+            </div>
 
             <blockquote>
                 <div className='motto'>'Putting the pieces together<br></br> for you and your business'-</div>
@@ -276,14 +276,14 @@ export default function Content() {
                 </div>
             </div>
 
-            <footer>
+            <div className='footer'>
                 <div className='footer-wrapper'>
                     <Link smooth to="#top-link">Top</Link>
                     <Link smooth to="#about-link">About</Link>
                     <Link smooth to="#services-link">Services</Link>
                     <Link smooth to="#projects-link">Projects</Link>
                 </div>
-            </footer>
+            </div>
         </div>
     )
 }

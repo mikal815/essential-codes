@@ -4,30 +4,39 @@ body {
 
 .content-laptop {
   display: grid;
-  grid-template-columns: repeat(12, minmax(1, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  /* grid-template-columns: repeat(12, [col-start] 1fr); */
   overflow-x: hidden;
   color: white;
-  z-index: 99;
+  z-index: 0;
   position: absolute;
 }
 
-header {
+.header {
   display: grid;
   font-family: "Orbitron Light", sans-serif;
   letter-spacing: 0.8rem;
-  grid-column: span 12 / auto;
+  /* grid-column: span 12 / auto; */
+  grid-column: 2/12;
   font-size: 1.75rem;
   margin-top: 30vh;
   margin-bottom: 20rem;
-  width: 69%;
+  /* width: 80%; */
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  /* left: 50%; */
   justify-self: center;
+  /* justify-content: center; */
 }
 
-header h1 {
+.header-wrapper {
+  background: rgba(15, 15, 15, 0.288);
+  padding: 3rem;
+}
+
+.header h1 {
   margin-top: -0.3rem;
   margin-bottom: 0;
-  justify-self: center;
-  grid-column: span 12 /auto;
   text-align: center;
   padding-bottom: 0.4rem;
 }
@@ -47,11 +56,6 @@ header h1 {
   grid-template-columns: repeat(4, auto);
   justify-content: space-between;
   margin-bottom: 1.7rem;
-}
-
-.header-wrapper {
-  background: rgba(15, 15, 15, 0.288);
-  padding: 3rem;
 }
 
 .navi-link {
@@ -312,7 +316,6 @@ blockquote {
 }
 
 .hire-wrapper {
-  /* background: rgba(15, 15, 15, 0.452); */
   background: rgba(15, 15, 15, 0.288);
   padding-left: 3rem;
   padding-right: 3rem;
@@ -391,11 +394,11 @@ blockquote {
   background: rgba(255, 255, 255, 0.664); 
 }
 
-footer {
+.footer {
   display: grid;
   font-weight: bold;
   background: rgba(15, 15, 15, 0.685);
-  grid-column: 3 / 11;
+  grid-column: 2 / 12;
   padding: 3rem;
   font-size: 1.1rem;
   margin-bottom: 3rem;
@@ -409,7 +412,7 @@ footer {
   padding: 3rem;
 }
 
-footer a {
+.footer a {
   font-family: "Dominik_Thin", sans-serif;
   text-decoration: none;
   color:white;
@@ -419,7 +422,7 @@ footer a {
   padding-bottom: 1.1rem;
 }
 
-footer a:hover {
+.footer a:hover {
   background: rgba(255, 255, 255, 0.418);
 }
 
@@ -467,7 +470,7 @@ footer a:hover {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  header {
+  .header {
     margin-left: 0;
     margin-right: 0;
     width: auto;
@@ -477,7 +480,7 @@ footer a:hover {
     margin-top: 5rem;
   }
 
-  header h1 {
+  .header h1 {
     font-size: 1.5rem;
   }
 
@@ -596,14 +599,14 @@ footer a:hover {
     width: auto;
   }
 
-  footer {
+  .footer {
     display: grid;
     justify-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  footer a {
+  .footer a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
