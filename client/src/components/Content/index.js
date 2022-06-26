@@ -77,9 +77,10 @@ export default function Content() {
                         <div><Link smooth to="#projects-link" className='navi-link'>Projects</Link></div>
                         <div><Link smooth to="#hire" className='hire'>Hire Me</Link></div>
                     </div>
-
-                    <h1>MIKE MENSINGER</h1>
-                    <div id='prof'>Web Developer</div>
+                    <div className='name-prof'>
+                        <h1>MIKE MENSINGER</h1>
+                        <div id='prof'>Web Developer</div>
+                    </div>
                 </div>
             </div>
 
