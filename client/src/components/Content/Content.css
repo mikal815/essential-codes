@@ -5,8 +5,6 @@ body {
 .content-laptop {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  /* grid-template-columns: repeat(12, minmax(0, 1fr)); */
-  /* grid-template-columns: repeat(12, [col-start] 1fr); */
   overflow-x: hidden;
   color: white;
   z-index: 0;
@@ -21,7 +19,9 @@ body {
   font-size: 1.75rem;
   margin-top: 30vh;
   margin-bottom: 20rem;
-  width: 69%;
+  width: 70%;
+
+  width: fit-content;
   justify-self: center;
 }
 
@@ -117,7 +117,9 @@ blockquote {
 
 .about {
   display: grid;
-  grid-column: 2 / 4;
+  /* grid-column: 2 / 4; */
+  grid-column:  2/ 7;
+  
   padding: 3rem;
   background: rgba(15, 15, 15, 0.685);
   font-size: 1.25rem;
@@ -291,7 +293,6 @@ blockquote {
   color: black;
   background-color: rgba(255, 255, 255, 0.623);
   font-size: 3rem;
-  /* display: inline; */
   line-height: 1.25;
   letter-spacing: 0.2rem;
   padding-top: 0.2rem;
@@ -471,10 +472,12 @@ blockquote {
   }
 
   .header h1 {
+    /* transform: translateX(1%); */
     font-size: 1.5rem;
   }
 
   #prof {
+    /* transform: translateX(1%); */
     font-size: 1.1rem;
     padding-top: 1rem;
   }
@@ -549,14 +552,17 @@ blockquote {
   }
 
   .portfolio {
+    /* grid-template-columns: repeat(4, minmax(0, 1fr));  */
     width: 60vw;
     justify-content: center;
     padding-bottom: 2rem;
   }
 
   .portfolio-container { 
-    grid-template-columns: repeat(1, minmax(20rem, 1fr)); 
+    grid-template-columns: repeat(1, minmax(20rem, 1fr));
   }
+
+
 
   .project img {
     width: 17rem;
