@@ -445,8 +445,6 @@ blockquote {
 
   .about {
     grid-column: span 12 / auto;
-    margin-left: 4rem;
-    margin-right: 4rem;
     justify-items: center;
   }
 
@@ -493,14 +491,17 @@ blockquote {
   }
 
   .about {
-    display: grid;
-    background: rgba(15, 15, 15, 0.685);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: 20rem;
+    grid-column: span 12/ auto;
+    /* grid-column: span 12 / auto; */
+    /* display: grid; */
+    /* background: rgba(15, 15, 15, 0.685); */
+    /* font-size: 1.25rem; */
+    /* line-height: 1.5; */
+    /* margin-bottom: 20rem;
     margin-left: 2rem;
-    margin-right: 2rem;
-    justify-items: center;
+    margin-right: 2rem; */
+    width: fit-content;
+    /* justify-items: center; */
   }
 
   .about-wrapper {
