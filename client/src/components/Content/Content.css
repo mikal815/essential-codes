@@ -580,7 +580,12 @@ blockquote {
   blockquote {
     display: grid;
     justify-content: center;
-    
+  }
+
+  .tag-line {
+    font-size: 2rem;  
+    width: 100vw;
+    text-align: center;
   }
 
   .hire-container {
