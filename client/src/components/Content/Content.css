@@ -590,9 +590,13 @@ blockquote {
 
   .hire-container {
     justify-self: center;
-    width: 75vw;
-    padding-left: 10%;
-    padding-right: 10%;
+    /* width: 100%; */
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .hire-wrapper {
+    padding: 1rem;
   }
 
   .input {
