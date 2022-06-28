@@ -68,9 +68,7 @@ export default function Content() {
     return (
 
         <div className="content-laptop" id="top-link">
-
             <div className='header'>
-
                 <div className='navigation'>
                     <div><Link smooth to="#services-link" className='navi-link'>Services</Link></div>
                     <div><Link smooth to="#about-link" className='navi-link'>About</Link></div>
@@ -80,8 +78,6 @@ export default function Content() {
 
                 <h1>MIKE MENSINGER</h1>
                 <div id='prof'>Web Developer</div>
-
-
             </div>
 
             <blockquote>
