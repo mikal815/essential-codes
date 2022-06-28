@@ -556,7 +556,7 @@ blockquote {
 
   .project {
     padding: 1rem;
-    width: 17rem;
+    /* width: 17rem; */
   }
 
   .project img {
