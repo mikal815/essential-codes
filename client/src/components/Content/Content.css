@@ -461,9 +461,8 @@ blockquote {
 
   .header {
     justify-self: center;
-    justify-content: center;
     margin-top: 5rem;
-    width: 100vw;
+    width: 17rem;
   }
 
   .header h1 {
@@ -536,7 +535,6 @@ blockquote {
 
   .portfolio {
     padding: 1rem;
-    /* grid-template-columns: repeat(1, minmax(0, 17rem)); */
     width: 100%;
   }
 
