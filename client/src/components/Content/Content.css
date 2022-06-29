@@ -615,9 +615,18 @@ blockquote {
 
   .footer {
     display: grid;
+    justify-self: center;
     justify-items: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 1rem;
+    width: 100vw;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
   }
 
   .footer a {
