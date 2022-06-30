@@ -430,17 +430,37 @@ blockquote {
 }
 
 /* TABLET SCREENS ///////////////////////////////////////////////////////////////////////////////////*/
-@media (max-width: 999px){
+@media (max-width: 999px) and (min-width: 701px) {
+
+  .motto {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    display: grid;
+  }
+
+  .about {
+    grid-column: span 12 / auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: auto;
+  }
 
   .services {
     grid-column: span 12 / auto;
-    margin-right: 10rem;
-    margin-left: 10rem;
+    margin-right: 10%;
+    margin-left: 10%;
   }
 
   .portfolio-container { 
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
     column-gap: 1.5rem;
+  }
+
+  .projects-wrapper {
+    justify-self: center;
+    width: 100%;
+    place-items: center;
   }
 
   .about {
@@ -450,9 +470,31 @@ blockquote {
 
   .hire-container {
     justify-items: center;
-    grid-column: 2/ 12;
-    padding-left: 10%;
-    padding-right: 10%;
+    grid-column: span 12 / auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .tag-line {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+  .footer {
+    grid-column: span 12 / auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    place-content: center;
+    width: fit-content;
+    justify-self: center;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -596,6 +638,7 @@ blockquote {
   }
 
   .hire-container {
+    grid-column: span 12 / auto;
     justify-self: center;
     width: 100vw;
     padding: 1rem;
