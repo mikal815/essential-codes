@@ -525,10 +525,17 @@ blockquote {
     font-size: 1rem;
   }
 
+  blockquote {
+    display: grid;
+    justify-content: center;
+    width: 100vw;
+  }
+
   .motto {
     font-size: 2rem;  
-    width: 100vw;
     text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .about {
@@ -621,11 +628,6 @@ blockquote {
     width: 12rem;
     overflow-wrap: break-word;
     text-align: center;
-  }
-
-  blockquote {
-    display: grid;
-    justify-content: center;
   }
 
   .tag-line {
