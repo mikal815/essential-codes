@@ -68,6 +68,15 @@ export default function Content() {
     return (
 
         <div className="content-laptop" id="top-link">
+
+            <div class="chevron-container">
+
+                <span class="text">SCROLL</span>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+
             <div className='header'>
                 <div className='navigation'>
                     <div><Link smooth to="#services-link" className='navi-link'>Services</Link></div>
