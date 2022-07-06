@@ -431,7 +431,7 @@ blockquote {
   grid-column: span 12 / auto;
   justify-self: right;
   margin-right: 5rem;
-  position: fixed;
+  position: absolute;
   width: 24px;
   height: 24px;
 }
