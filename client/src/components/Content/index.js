@@ -70,7 +70,6 @@ export default function Content() {
         <div className="content-laptop" id="top-link">
 
             <div class="chevron-container">
-
                 <span class="text">SCROLL</span>
                 <div class="chevron"></div>
                 <div class="chevron"></div>
