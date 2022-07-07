@@ -594,8 +594,7 @@ blockquote {
 @media (max-width: 700px) {
 
   .chevron-container {
-    justify-self: center;
-    margin-right: 0;
+    margin-top: 75vh;
   }
 
   .header {
