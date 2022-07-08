@@ -426,7 +426,7 @@ blockquote {
   display: grid;
   grid-column: span 12 / auto;
   justify-self: center;
-  margin-top: 80vh;
+  margin-top: 85vh;
   position: absolute;
   width: 24px;
   height: 24px;
