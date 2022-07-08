@@ -67,7 +67,7 @@ body {
   background: rgba(255, 255, 255, 0.418); 
 }
 
-.hire {
+.contact {
   text-decoration: none;
   font-family: "Dominik_Thin";
   color: black;
@@ -79,7 +79,7 @@ body {
   letter-spacing: 0.13rem;
 }
 
-.hire:hover {
+.contact:hover {
   background: rgba(255, 255, 255, 0.418); 
   color: white;
 }
@@ -299,7 +299,7 @@ blockquote {
   padding-left: 0.5rem;
 }
 
-.hire-container {
+.contact-container {
   text-align: center;
   justify-content: center;
   padding: 3rem;
@@ -310,13 +310,13 @@ blockquote {
   grid-column: 7 / 12;
 }
 
-.hire-wrapper {
+.contact-wrapper {
   background: rgba(15, 15, 15, 0.288);
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
-.hire-container h2 {
+.contact-container h2 {
   font-family: "Orbitron Light", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -560,7 +560,7 @@ blockquote {
     justify-items: center;
   }
 
-  .hire-container {
+  .contact-container {
     justify-items: center;
     grid-column: span 12 / auto;
     margin-left: 10%;
@@ -732,14 +732,14 @@ blockquote {
     text-align: center;
   }
 
-  .hire-container {
+  .contact-container {
     grid-column: span 12 / auto;
     justify-self: center;
     width: 100vw;
     padding: 1rem;
   }
 
-  .hire-wrapper {
+  .contact-wrapper {
     padding: 1rem;
   }
 

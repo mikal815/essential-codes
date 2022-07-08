@@ -81,7 +81,7 @@ export default function Content() {
                     <div><Link smooth to="#services-link" className='navi-link'>Services</Link></div>
                     <div><Link smooth to="#about-link" className='navi-link'>About</Link></div>
                     <div><Link smooth to="#projects-link" className='navi-link'>Projects</Link></div>
-                    <div><Link smooth to="#hire" className='hire'>Contact</Link></div>
+                    <div><Link smooth to="#contact" className='contact'>Contact</Link></div>
                 </div>
 
                 <h1>MIKE MENSINGER</h1>
@@ -269,8 +269,8 @@ export default function Content() {
                 <div className="tag-line">'Programming the future!'-<br></br></div>
             </blockquote>
 
-            <div className="hire-container" id="hire">
-                <div className='hire-wrapper'>
+            <div className="contact-container" id="contact">
+                <div className='contact-wrapper'>
                     <h2>Contact</h2>
                     <form className="form span-row-2" onSubmit={handleSubmit}>
                         <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
