@@ -463,13 +463,11 @@ blockquote {
 .chevron:before {
   left: 0;
   transform: skew(0deg, 30deg);
-  /* transform: skew(0deg, 25deg); */
 }
 
 .chevron:after {
   right: 0;
   width: 50%;
-  /* transform: skew(0deg, -25deg); */
   transform: skew(0deg, -30deg);
 }
 
@@ -481,23 +479,19 @@ blockquote {
   33% {
     opacity: 1;
     transform: translateY(30px);
-    /* transform: translateY(40px); */
   }
   67% {
     opacity: 1;
     transform: translateY(40px);
-    /* transform: translateY(50px); */
   }
   100% {
     opacity: 0;
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-    /* transform: translateY(55px) scale3d(0.5, 0.5, 0.5); */
   }
 }
 
 .text {
   display: block;
-  /* margin-top: 75px; */
   margin-top: 65px;
   margin-left: -11px;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -507,7 +501,6 @@ blockquote {
   text-transform: uppercase;
   white-space: nowrap;
   opacity: .25;
-  /* animation: pulse 2s linear alternate infinite; */
   animation: pulse 1.5s linear alternate infinite;
 }
 

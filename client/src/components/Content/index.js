@@ -266,7 +266,7 @@ export default function Content() {
             </div>
 
             <blockquote>
-                <div className="tag-line">'Programming the future!'-<br></br></div>
+                <div className="tag-line">'Program the future!'-<br></br></div>
             </blockquote>
 
             <div className="contact-container" id="contact">
