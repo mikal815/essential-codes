@@ -150,7 +150,7 @@ const Box6 = () => {
 
     useFrame(() => {
         mesh.current.rotation.y = document.body.getBoundingClientRect().top * .00025;
-        mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.0045;
+        mesh.current.rotation.z = document.body.getBoundingClientRect().top * -.005;
     })
 
     return (
